@@ -6,4 +6,3 @@ export interface IPicture {
     picturable_id?: number
     picturable_type?: string
   }
-  

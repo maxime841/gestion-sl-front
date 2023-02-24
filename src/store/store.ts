@@ -1,3 +1,6 @@
+import { AppHook } from './app/app.hook'
+import { AppService } from './app/app.service'
+import { AppStore } from './app/app.store'
 import { TokenHook } from './token/token.hook'
 import { TokenService } from './token/token.service'
 import { TokenStore } from './token/token.store'
@@ -15,5 +18,10 @@ export const Store = {
         ...userStore,
         ...userService,
         ...userHook,
+      },
+      app: {
+        ...AppStore,
+        ...AppService,
+        ...AppHook
       },
 }

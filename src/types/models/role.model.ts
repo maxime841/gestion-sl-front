@@ -5,4 +5,3 @@ export interface Irole {
     id?: number
     libelle?: string
   }
-  
