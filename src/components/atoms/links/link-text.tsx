@@ -1,5 +1,5 @@
 import React from 'react'
-import { TLink } from '@types-app/link.type'
+import { TLink } from '../../../types/link.type'
 import { NavLink } from 'react-router-dom'
 
 const classBasic = `

@@ -1,11 +1,11 @@
 import React from 'react'
-import HomeIcon from '@atoms/icons/home-icon'
-import LinkBtn from '@atoms/links/link-btn'
-import ClubIcon from '@atoms/icons/club-icon'
-import DjIcon from '@atoms/icons/dj-icon'
-import HostIcon from '@atoms/icons/host-icon'
-import DancerIcon from '@atoms/icons/dancer-icon'
-import ShopIcon from '@atoms/icons/shop-icon'
+import HomeIcon from '../../atoms/icons/home-icon'
+import LinkBtn from '../../atoms/links/link-btn'
+import ClubIcon from '../../atoms/icons/club-icon'
+import DjIcon from '../../atoms/icons/dj-icon'
+import HostIcon from '../../atoms/icons/host-icon'
+import DancerIcon from '../../atoms/icons/dancer-icon'
+import ShopIcon from '../../atoms/icons/shop-icon'
 
 function MenuPrimary () {
   return (

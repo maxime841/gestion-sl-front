@@ -1,4 +1,4 @@
-import { Store } from '@store/store'
+import { Store } from '../../store/store'
 import { http } from './http.instance'
 
 export const HttpInterceptor = {

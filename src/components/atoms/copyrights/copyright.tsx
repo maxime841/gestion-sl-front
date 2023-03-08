@@ -1,4 +1,4 @@
-import { TComponentParent } from '@types-app/component-parent.type'
+import { TComponentParent } from '../../../types/component-parent.type'
 import React from 'react'
 
 /**

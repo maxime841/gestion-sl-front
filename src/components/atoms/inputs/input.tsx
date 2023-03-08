@@ -1,4 +1,4 @@
-import { TInput } from '@types-app/input.type'
+import { TInput } from '../../../types/input.type'
 import React from 'react'
 
 /**

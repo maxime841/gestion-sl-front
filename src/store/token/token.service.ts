@@ -1,7 +1,7 @@
-import { http } from '@config-app/http/http.instance'
-import { userService } from '@store/user/user.service'
-import { IjwtVerified } from '@types-app/models/jwt.model'
-import { Eroute } from '@types-app/route.type'
+import { http } from '../../config/http/http.instance'
+import { userService } from '../user/user.service'
+import { IjwtVerified } from '../../types/models/jwt.model'
+import { Eroute } from '../../types/route.type'
 import { TokenStore } from './token.store'
 
 export const TokenService = {

@@ -1,4 +1,4 @@
-import { TBtn } from '@types-app/btn.type'
+import { TBtn } from '../../../types/btn.type'
 import React from 'react'
 
 /**

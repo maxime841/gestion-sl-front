@@ -1,6 +1,6 @@
 /* eslint-disable no-tabs */
 import React from 'react'
-import { TIcons } from '@types-app/icon.type'
+import { TIcons } from '../../../types/icon.type'
 
 /**
  * Shop

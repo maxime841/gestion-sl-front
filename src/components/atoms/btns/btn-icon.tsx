@@ -1,5 +1,5 @@
 import React from 'react'
-import { TBtn } from '@types-app/btn.type'
+import { TBtn } from '../../../types/btn.type'
 
 /**
  * Btn Icon

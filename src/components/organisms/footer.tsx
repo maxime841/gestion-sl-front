@@ -1,9 +1,9 @@
 import React from 'react'
-import LinkText from '@atoms/links/link-text'
-import Copyright from '@atoms/copyrights/copyright'
-import InstagramIcon from '@atoms/icons/instagram-icon'
-import FlickerIcon from '@atoms/icons/flicker-icon'
-import DiscordIcon from '@atoms/icons/discord-icon'
+import LinkText from '../atoms/links/link-btn'
+import Copyright from '../atoms/copyrights/copyright'
+import InstagramIcon from '../atoms/icons/instagram-icon'
+import FlickerIcon from '../atoms/icons/flicker-icon'
+import DiscordIcon from '../atoms/icons/discord-icon'
 
 function Footer() {
   return (

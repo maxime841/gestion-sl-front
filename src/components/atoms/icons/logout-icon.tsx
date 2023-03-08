@@ -1,4 +1,4 @@
-import { TIcons } from '@types-app/icon.type'
+import { TIcons } from '../../../types/icon.type'
 import React from 'react'
 
 export function LogoutIcon({ color, size }: TIcons) {

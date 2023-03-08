@@ -3,11 +3,22 @@ import ReactDOM from 'react-dom/client'
 import './style/index.css'
 import App from './pages/App'
 import reportWebVitals from './reportWebVitals'
+import { BrowserRouter } from 'react-router-dom'
+import { HttpInterceptor } from './config/http/http.interceptor'
+import { Store } from './store/store'
 
-const root = ReactDOM.createRoot(document.getElementById('root'))
+HttpInterceptor.request()
+HttpInterceptor.response()
+Store.darkmode.startCheckDarkMode()
+
+const root = ReactDOM.createRoot(
+  document.getElementById('root')
+)
 root.render(
   <React.StrictMode>
-    <App />
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
   </React.StrictMode>
 )
 

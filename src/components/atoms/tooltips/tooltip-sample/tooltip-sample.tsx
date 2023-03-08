@@ -1,5 +1,5 @@
 import React from 'react'
-import { TtooltipSample } from '@types-app/tooltip-sample'
+import { TtooltipSample } from '../../../../types/tooltip-sample'
 
 /**
  * tooltip basic design

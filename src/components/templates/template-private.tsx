@@ -1,5 +1,5 @@
-import Header from '@organisms/header'
-import { Store } from '@store/store'
+import Header from '../organisms/header'
+import { Store } from '../../store/store'
 import React from 'react'
 import { Outlet } from 'react-router-dom'
 

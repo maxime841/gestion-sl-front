@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
-import { TInput } from '@types-app/input.type'
-import Input from '@atoms/inputs/input'
-import MagnifyingGlassIcon from '@atoms/icons/magnifying-glass-icon'
+import { TInput } from '../../../types/input.type'
+import Input from '../../atoms/inputs/input'
+import MagnifyingGlassIcon from '../../atoms/icons/magnifying-glass-icon'
 
 /**
  * SearchBar

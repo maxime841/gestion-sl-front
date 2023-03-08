@@ -1,17 +1,17 @@
-import { http } from '@config-app/http/http.instance'
-import { AppService } from '@store/app/app.service'
-import { Store } from '@store/store'
-import { TokenService } from '@store/token/token.service'
-import { Eerror } from '@types-app/error.type'
-import { Ijwt } from '@types-app/models/jwt.model'
+import { http } from '../../config/http/http.instance'
+import { AppService } from '../app/app.service'
+import { Store } from '../store'
+import { TokenService } from '../token/token.service'
+import { Eerror } from '../../types/error.type'
+import { Ijwt } from '../../types/models/jwt.model'
 import {
   Iuser,
   IuserLogout,
   IuserUpdateResponse,
   TresetPassword,
   TupdatePasswordResponse,
-} from '@types-app/models/user.model'
-import { Eroute } from '@types-app/route.type'
+} from '../../types/models/user.model'
+import { Eroute } from '../../types/route.type'
 import { userStore } from './user.store'
 
 export const userService = {

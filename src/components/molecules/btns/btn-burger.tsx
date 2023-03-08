@@ -1,11 +1,11 @@
 import React from 'react'
-import { Store } from '@store/store'
-import { Btn } from '@atoms/btns/btn'
-import { TBtnMenuBurger } from '@types-app/btn.type'
-import MenuBurgerIcon from '@atoms/icons/burger-icon'
-import LinkBtn from '@atoms/links/link-btn'
-import HomeIcon from '@atoms/icons/home-icon'
-import ClubIcon from '@atoms/icons/club-icon'
+import { Store } from '../../../store/store'
+import { Btn } from '../../atoms/btns/btn'
+import { TBtnMenuBurger } from '../../../types/btn.type'
+import MenuBurgerIcon from '../../atoms/icons/burger-icon'
+import LinkBtn from '../../atoms/links/link-btn'
+import HomeIcon from '../../atoms/icons/home-icon'
+import ClubIcon from '../../atoms/icons/club-icon'
 
 /**
  * btn dark mode with change icon moon or sun

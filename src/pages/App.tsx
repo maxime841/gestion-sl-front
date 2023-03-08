@@ -1,10 +1,10 @@
-import './app.css'
+// import './App.css'
 import React, { useEffect } from 'react'
-import { Route, Routes, useNavigate } from 'react-router-dom'
-import TemplatePublic from '@templates/template-public'
-import AcceuilPage from '@pages/public/acceuil-page'
-import { TemplatePrivate } from '@templates/template-private'
-import { AuthGuard } from '@config-app/auth-gard/auth-gard'
+import { Route, Routes } from 'react-router-dom'
+import AcceuilPage from './public/acceuil-page'
+import TemplatePublic from '../components/templates/template-public'
+import { TemplatePrivate } from '../components/templates/template-private'
+import { AuthGuard } from '../config/auth-gard/auth-gard'
 
 function App() {
   return (

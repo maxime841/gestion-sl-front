@@ -1,6 +1,6 @@
 import React from 'react'
-import Footer from '@organisms/footer'
-import Header from '@organisms/header'
+import Footer from '../organisms/footer'
+import Header from '../organisms/header'
 import { Outlet } from 'react-router-dom'
 
 function TemplatePublic () {

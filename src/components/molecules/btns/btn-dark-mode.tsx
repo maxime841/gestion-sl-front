@@ -1,9 +1,9 @@
 import React from 'react'
-import { Store } from '@store/store'
-import { BtnIcon } from '@atoms/btns/btn-icon'
-import MoonIcon from '@atoms/icons/moon-icon'
-import SunIcon from '@atoms/icons/sun-icon'
-import { TBtnDarkMode } from '@types-app/btn.type'
+import { Store } from '../../../store/store'
+import { BtnIcon } from '../../atoms/btns/btn-icon'
+import MoonIcon from '../../atoms/icons/moon-icon'
+import SunIcon from '../../atoms/icons/sun-icon'
+import { TBtnDarkMode } from '../../../types/btn.type'
 
 /**
  * btn dark mode with change icon moon or sun

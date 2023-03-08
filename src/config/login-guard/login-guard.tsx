@@ -1,4 +1,4 @@
-import { Store } from '@store/store'
+import { Store } from '../../store/store'
 import React from 'react'
 import { Outlet, Navigate } from 'react-router-dom'
 
@@ -15,4 +15,3 @@ export function LoginGuard() {
     <Outlet />
   )
 }
-
