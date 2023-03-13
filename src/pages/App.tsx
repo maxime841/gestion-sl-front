@@ -9,7 +9,7 @@ import { AuthGuard } from '../config/auth-gard/auth-gard'
 function App() {
   return (
     <Routes>
-      <Route path='/acceuil' element={<AcceuilPage />} />
+      <Route path='/' element={<AcceuilPage />} />
       <Route element={<TemplatePublic />}>
       </Route>
       <Route element={<AuthGuard />}>
