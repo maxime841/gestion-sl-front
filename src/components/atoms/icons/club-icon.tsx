@@ -17,6 +17,7 @@ function ClubIcon ({ color, size }: TIcons) {
       ${color} 
       ${size ?? 'w-8 h-8'}
       rounded-full
+      hidden md:visible lg:block
       `}
     />
   )

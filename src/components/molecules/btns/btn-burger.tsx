@@ -6,6 +6,10 @@ import MenuBurgerIcon from '../../atoms/icons/burger-icon'
 import LinkBtn from '../../atoms/links/link-btn'
 import HomeIcon from '../../atoms/icons/home-icon'
 import ClubIcon from '../../atoms/icons/club-icon'
+import DjIcon from '@atoms/icons/dj-icon'
+import DancerIcon from '@atoms/icons/dancer-icon'
+import HostIcon from '@atoms/icons/host-icon'
+import ShopIcon from '@atoms/icons/shop-icon'
 
 /**
  * btn dark mode with change icon moon or sun
@@ -29,48 +33,48 @@ function BtnIconMenuBurger({ addClass }: TBtnMenuBurger) {
             rounded-lg z-10'>
           {/* link home */}
           <li>
-            <LinkBtn link='/'>
+            <LinkBtn link='/home'>
               <HomeIcon size='w-5 h-5' />
-              <span className='ml-2'>Home</span>
+              <span className='ml-2 mx-2'>Home</span>
             </LinkBtn>
           </li>
 
           {/* link club */}
           <li className='mt-2'>
             <LinkBtn link='/club'>
-              <ClubIcon size='w-5 h-5' />
-              <span className='ml-2'>Nos Club</span>
+              <ClubIcon size='w-7 h-7' />
+              <span className='ml-2 mx-2'>Nos Club</span>
             </LinkBtn>
           </li>
 
           {/* link djs */}
-          <li className='mt-2'>
+          <li className='mt-2 mx-2'>
             <LinkBtn link='/dj'>
-              <ClubIcon size='w-5 h-5' />
+              <DjIcon size='w-5 h-5' />
               <span className='ml-2'>Nos Djs</span>
             </LinkBtn>
           </li>
 
           {/* link host */}
-          <li className='mt-2'>
+          <li className='mt-2 mx-2'>
             <LinkBtn link='/host'>
-              <ClubIcon size='w-5 h-5' />
+              <HostIcon size='w-5 h-5' />
               <span className='ml-2'>Nos Hosts</span>
             </LinkBtn>
           </li>
 
           {/* link dancer */}
-          <li className='mt-2'>
+          <li className='mt-2 mx-2'>
             <LinkBtn link='/dancer'>
-              <ClubIcon size='w-5 h-5' />
+              <DancerIcon size='w-10 h-10' />
               <span className='ml-2'>Nos Danseurs</span>
             </LinkBtn>
           </li>
 
           {/* link shop */}
-          <li className='mt-2'>
+          <li className='mt-2 mx-2'>
             <LinkBtn link='/shop'>
-              <ClubIcon size='w-5 h-5' />
+              <ShopIcon size='w-5 h-5' />
               <span className='ml-2'>Nos Shops</span>
             </LinkBtn>
           </li>

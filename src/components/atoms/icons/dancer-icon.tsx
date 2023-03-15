@@ -9,7 +9,7 @@ import { TIcons } from '../../../types/icon.type'
  */
 function DancerIcon ({ color, size }: TIcons) {
   return (
-    <svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" fill="#000000" height="800px" width="800px" version="1.1" viewBox="0 0 307.45 307.45" enable-background="new 0 0 307.45 307.45">
+    <svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" fill="#000000" height="20px" width="25px" version="1.1" viewBox="0 0 280 280" enable-background="new 0 0 307.45 307.45" className="hidden md:visible lg:block">
     <g>
       <circle cx="40.483" cy="40.085" r="27.59"/>
       <circle cx="195.35" cy="33.018" r="25.907"/>

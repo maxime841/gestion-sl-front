@@ -12,15 +12,15 @@ function MenuPrimary () {
     <ul className='flex items-center justify-around hidden sm:visible md:flex'>
       {/* link home */}
       <li>
-        <LinkBtn link='/'>
-          <HomeIcon size='w-5 h-5' />
+        <LinkBtn link='/home' addClass='w-10 h-5 mx-1'>
+          <HomeIcon size='w-5 h-5'/>
           <span className='ml-2'>Home</span>
         </LinkBtn>
       </li>
 
       {/* link club */}
       <li>
-        <LinkBtn link='/club'>
+        <LinkBtn link='/club' addClass='w-10 h-5 mx-1'>
           <ClubIcon size='w-5 h-5' />
           <span className='ml-2'>Nos Clubs</span>
         </LinkBtn>
@@ -28,7 +28,7 @@ function MenuPrimary () {
 
       {/* link djs */}
       <li>
-        <LinkBtn link='/dj'>
+        <LinkBtn link='/dj' addClass='w-10 h-5 mx-1'>
           <DjIcon size='w-5 h-5' />
           <span className='ml-2'>Nos Djs</span>
         </LinkBtn>
@@ -36,15 +36,15 @@ function MenuPrimary () {
 
       {/* link hosts */}
       <li>
-        <LinkBtn link='/host'>
-          <HostIcon size='w-5 h-5' />
+        <LinkBtn link='/host' addClass='w-10 h-5 mx-1'>
+          <HostIcon size='w-5 h-10' />
           <span className='ml-2'>Nos Hosts</span>
         </LinkBtn>
       </li>
 
       {/* link dancers */}
       <li>
-        <LinkBtn link='/dancer'>
+        <LinkBtn link='/dancer' addClass='w-10 h-5 mx-1'>
           <DancerIcon size='w-5 h-5' />
           <span className='ml-2'>Nos Danceurs</span>
         </LinkBtn>
@@ -52,7 +52,7 @@ function MenuPrimary () {
 
       {/* link Shop */}
       <li>
-        <LinkBtn link='/shop'>
+        <LinkBtn link='/shop' addClass='w-10 h-4 mx-1'>
           <ShopIcon size='w-5 h-5' />
           <span className='ml-2'>Nos Shops</span>
         </LinkBtn>

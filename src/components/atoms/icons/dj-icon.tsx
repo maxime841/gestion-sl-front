@@ -15,12 +15,13 @@ function DjIcon ({ color, size }: TIcons) {
         xmlns="http://www.w3.org/2000/svg"
         xmlnsXlink="http://www.w3.org/1999/xlink"
         fill="#000000"
-        height="800px"
-        width="800px"
+        height="20px"
+        width="20px"
         version="1.1"
         id="Capa_1"
         viewBox="0 0 460.067 460.067"
-        xmlSpace="preserve">
+        xmlSpace="preserve"
+        className="hidden md:visible lg:block">
         <g id="XMLID_461_">
 	        <circle id="XMLID_470_" cx="104.658" cy="37.866" r="37.866"/>
 	        <path id="XMLID_1077_" d="M109.144,401.324v36.817c0,12.108,9.816,21.925,21.925,21.925s21.925-9.816,21.925-21.925V403.97H121.24   C116.925,403.97,112.83,403.018,109.144,401.324z"/>
