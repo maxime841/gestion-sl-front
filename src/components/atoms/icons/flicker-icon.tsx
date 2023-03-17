@@ -12,8 +12,8 @@ function FlickerIcon ({ color, size }: TIcons) {
     <svg
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 48 48"
-        width="48px"
-        height="48px">
+        width="20px"
+        height="20px">
             <linearGradient
                 id="JgUXPL7C3ZUWF61kqVZ_Sa"
                 x1="2.71"

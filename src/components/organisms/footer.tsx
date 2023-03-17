@@ -15,21 +15,8 @@ function Footer() {
         <LinkText link='/reglement'>Réglement interieur</LinkText>
       </div>
       <div>
-        <div className='grid grid-flow-col gap-4'>
-          <LinkText link=''>
-            <InstagramIcon />
-          </LinkText>
-          <LinkText link=''>
-            <FlickerIcon />
-          </LinkText>
-          <LinkText link=''>
-            <DiscordIcon />
-          </LinkText>
-        </div>
-      </div>
-      <div>
         <Copyright>
-          Copyright © 2022 - All right reserved by Maxime Poirot & John Haimez
+          Copyright © 2022 - All right reserved by Madmax3184@sl
           Ltd
         </Copyright>
       </div>

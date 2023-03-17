@@ -12,8 +12,8 @@ function DiscordIcon ({ color, size }: TIcons) {
     <svg
         xmlns="http://www.w3.org/2000/svg"
         xmlnsXlink="http://www.w3.org/1999/xlink"
-        width="50px"
-        height="50px"
+        width="20px"
+        height="20px"
         viewBox="0 -28.5 256 256"
         version="1.1"
         preserveAspectRatio="xMidYMid">

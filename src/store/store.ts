@@ -1,6 +1,9 @@
 import { AppHook } from './app/app.hook'
 import { AppService } from './app/app.service'
 import { AppStore } from './app/app.store'
+import { ClubHook } from './club/club.hook'
+import { ClubService } from './club/club.service'
+import { ClubStore } from './club/club.store'
 import { DarkModeHook } from './dark-mode/dark-mode.hook'
 import { DarkModeService } from './dark-mode/dark-mode.service'
 import { DarkModeStore } from './dark-mode/dark-mode.store'
@@ -40,4 +43,9 @@ export const Store = {
         ...DarkModeService,
         ...DarkModeHook,
       },
+      club: {
+        ...ClubStore,
+        ...ClubService,
+        ...ClubHook,
+      }
 }

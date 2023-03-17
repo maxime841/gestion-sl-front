@@ -7,6 +7,8 @@ import { TemplatePrivate } from '../components/templates/template-private'
 import { AuthGuard } from '../config/auth-gard/auth-gard'
 import DescriptionPage from './public/description-page'
 import HomePage from './public/home-page'
+import AboutUsPage from './public/about-us-page'
+import ClubPage from './public/club-page'
 
 function App() {
   return (
@@ -15,6 +17,8 @@ function App() {
       <Route path='/description' element={<DescriptionPage />} />
       <Route element={<TemplatePublic />}>
       <Route path='/home' element={<HomePage />} />
+      <Route path='/aboutus' element={<AboutUsPage />} />
+      <Route path='/club' element={<ClubPage />} />
       </Route>
       <Route element={<AuthGuard />}>
         <Route element={<TemplatePrivate />}>

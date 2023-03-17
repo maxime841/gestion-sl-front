@@ -77,7 +77,7 @@ function DescriptionPage() {
               </div>
           </article>
       </section>
-          /** **********************************Modal Wam**************************************/
+          {/** **********************************Modal Wam**************************************/}
           <input type="checkbox" id="my-modal-6" className="modal-toggle" /><div className="modal modal-bottom sm:modal-middle">
             <img src={WamLogo} alt="portrait club wam" />
               <div className="modal-box bg-black">
@@ -94,6 +94,5 @@ Nous concentrons tout autour de la culture noire, hip hop, rnb, moombathon, regg
           </div></>
   )
 }
-
 
 export default DescriptionPage

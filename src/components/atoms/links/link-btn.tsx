@@ -12,11 +12,13 @@ function LinkBtn({
   padding,
   rounded,
   textColor,
+  cible,
 }: TLink) {
   return (
     <NavLink
       to={link}
       onClick={click}
+      target={cible}
       end
       className={({ isActive }) =>
         isActive

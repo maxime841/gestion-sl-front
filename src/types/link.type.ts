@@ -12,6 +12,7 @@ export type TLink = TComponentParent & {
   hoverBg?: string
   bg?: string
   rounded?: string
+  cible?: string
 }
 
 /**
