@@ -1,6 +1,6 @@
 import LinkBtn from '@atoms/links/link-btn'
 import LogoPina from '../../assets/picture/Logo-pIna.png'
-import WamLogo from '../../assets/picture/wam_logo.jpg'
+import WamLogo from '../../assets/picture/logo_wam.jpg'
 import React, { useState } from 'react'
 import '../App.css'
 
@@ -79,8 +79,8 @@ function DescriptionPage() {
       </section>
           {/** **********************************Modal Wam**************************************/}
           <input type="checkbox" id="my-modal-6" className="modal-toggle" /><div className="modal modal-bottom sm:modal-middle">
-            <img src={WamLogo} alt="portrait club wam" />
               <div className="modal-box bg-black">
+              <img src={WamLogo} alt="portrait club wam" />
                   <h3 className="font-bold text-lg">Description club WAM</h3>
                   <p className="py-4">Wam est un lieu basé sur la culture afro, où vous trouverez toutes sortes de musique, deejays, d'artistes et de spectacles.
 Il est ouvert pour les sorties 24h/24 et 7j/7, vous avez un salon de détente avec la zone de grillade du bar Allen et un food truck, la nourriture est compatible avec le système Mystory RP.

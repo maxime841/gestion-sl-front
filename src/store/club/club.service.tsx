@@ -7,7 +7,7 @@ export const ClubService = {
    * get all clubs
    */
   getAllClubs: async () => {
-    const res = await http.get<IClubsResponse>('club') // ici on a response
+    const res = await http.get<IClubsResponse>('/club') // ici on a response
     ClubStore.clubs$.next([...res.data.clubs!])
   },
 
@@ -19,4 +19,5 @@ export const ClubService = {
     const res = await http.get<IClubResponse>(`club/${id}`)
     ClubStore.clubSelected$.next({ ...res.data.club })
   },
+
 }

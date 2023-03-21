@@ -1,5 +1,5 @@
 // import './App.css'
-import React, { useEffect } from 'react'
+import React from 'react'
 import { Route, Routes } from 'react-router-dom'
 import AcceuilPage from './public/acceuil-page'
 import TemplatePublic from '../components/templates/template-public'

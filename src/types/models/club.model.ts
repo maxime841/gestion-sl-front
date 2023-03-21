@@ -31,5 +31,5 @@ export interface IClubResponse {
  * type for response all clubs
  */
 export interface IClubsResponse {
-  clubs?: IClub[]
+  clubs: IClub[]
 }

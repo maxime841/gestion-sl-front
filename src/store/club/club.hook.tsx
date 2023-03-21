@@ -22,6 +22,7 @@ export const ClubHook = {
 
     return clubs
   },
+
   /**
    * hook for observable clubSelected$
    * @param id: string

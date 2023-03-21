@@ -7,6 +7,7 @@ import DiscordIcon from '@atoms/icons/discord-icon'
 import LinkText from '@atoms/links/link-text'
 import Neyney from '../../assets/picture/neyney_picture.jpg'
 import Second_life_logo from '../../assets/picture/second_life_logo.png'
+import { Store } from '@store/store'
 
 function AboutUsPage() {
   return (
@@ -29,14 +30,14 @@ function AboutUsPage() {
                       Owner WAM club
                     </MDBCardText>
                     <div className="flex justify-center mb-4 pb-2">
-                      <a className="mx-3" href="https://www.instagram.com/neyjma_galli.sl/" target="_blank"><InstagramIcon /></a>
+                      <a className="mx-3" href="https://www.instagram.com/neyneyrhia.sl/?igshid=YmMyMTA2M2Y%3D" target="_blank"><InstagramIcon /></a>
                       <a className="mx-3" href="https://www.flickr.com/photos/194852201@N08" target="_blank"><FlickerIcon /></a>
                       <a className="mx-3" href="https://discord.gg/ejXbhHbC" target="_blank"><DiscordIcon /></a>
                       <a className="mx-3" href="http://maps.secondlife.com/secondlife/Saint%20Emilion/98/52/2402" target="_blank"><img className="w-5" src={Second_life_logo} alt="logo second life" /></a>
                     </div>
                     <div className="d-flex justify-content-between text-center mt-5 mb-2">
                       <div>
-                        <MDBCardText className="mb-1 h5">632</MDBCardText>
+                        <MDBCardText className="mb-1 h5">632 </MDBCardText>
                         <MDBCardText className="small text-muted mb-0">Followers Instagram</MDBCardText>
                       </div>
                       <div className="px-3">
