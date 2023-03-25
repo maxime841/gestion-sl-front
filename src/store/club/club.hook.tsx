@@ -27,7 +27,7 @@ export const ClubHook = {
    * hook for observable clubSelected$
    * @param id: string
    */
-  useClub: (id: number) => {
+  useClub: (id: string) => {
     const [club, setClub] = useState<IClub>({})
 
     useEffect(() => {

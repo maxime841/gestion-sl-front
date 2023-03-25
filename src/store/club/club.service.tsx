@@ -15,7 +15,7 @@ export const ClubService = {
    * get one club via id
    * @param id string
    */
-  getClub: async (id: number) => {
+  getClub: async (id: string) => {
     const res = await http.get<IClubResponse>(`club/${id}`)
     ClubStore.clubSelected$.next({ ...res.data.club })
   },

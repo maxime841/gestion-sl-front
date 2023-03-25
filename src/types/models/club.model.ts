@@ -1,6 +1,6 @@
-// import { Idancer } from './dancer.type'
-// import { Idj } from './dj.type'
-// import { IParties } from './parties.type'
+ import { IDancer } from '@types-app/models/dancer.model'
+ import { IDj } from '@types-app/models/dj.model'
+ import { IParty } from '@types-app/models/party.model'
 import { IPicture } from './picture.type'
 
 /**
@@ -15,9 +15,9 @@ export interface IClub {
   presentation?: string
   picture?: IPicture
   pictures?: IPicture[]
-//  parties?: IParties[]
-//  djs?: Idj[]
-//  dancers?: Idancer[]
+  parties?: IParty[]
+  djs?: IDj[]
+  dancers?: IDancer[]
 }
 
 /**
@@ -32,4 +32,12 @@ export interface IClubResponse {
  */
 export interface IClubsResponse {
   clubs: IClub[]
+  parties: IClub[]
+}
+
+/**
+ * type for get profil page club
+ */
+export type TPageProfilClub = {
+  clubCurrent: IClub
 }

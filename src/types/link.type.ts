@@ -1,4 +1,5 @@
 import { TComponentParent } from './component-parent.type'
+import { IClub } from './models/club.model'
 
 /**
  * type for all component
