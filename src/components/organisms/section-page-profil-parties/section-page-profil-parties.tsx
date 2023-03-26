@@ -1,9 +1,7 @@
 import Title from '@atoms/title/title'
 import { CardParties } from '@molecules/card-parties/card-parties'
-import { Store } from '@store/store'
 import { TPageProfilClub } from '@types-app/models/club.model'
 import React from 'react'
-import { useParams } from 'react-router-dom'
 
 export function SectionPageProfilParties({ clubCurrent }: TPageProfilClub) {
   return (
