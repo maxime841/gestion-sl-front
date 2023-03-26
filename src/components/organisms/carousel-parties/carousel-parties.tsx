@@ -6,7 +6,7 @@ const CarouselParties = ({ clubCurrent }: TPageProfilClub) => {
 // => Définition des variables
   const maxScrollWidth = useRef(0)
   const [currentIndex, setCurrentIndex] = useState(0)
-  const carousel = useRef(null)
+  const carousel = useRef(null) as any
 
   const movePrev = () => {
     if (currentIndex > 0) {
@@ -39,7 +39,7 @@ const CarouselParties = ({ clubCurrent }: TPageProfilClub) => {
 
   useEffect(() => {
     if (carousel !== null && carousel.current !== null) {
-      // carousel.current = carousel.current * currentIndex
+      carousel.current = carousel.current * currentIndex
     }
   }, [currentIndex])
 

@@ -33,9 +33,6 @@ export function CardParties({ partyCurrent }: TPartyProfil) {
       <CardFooter className="pt-3">
       </CardFooter>
     </Card>
-       : (
-        <p>loading ...</p>
-      )
     </div>
   )
 }

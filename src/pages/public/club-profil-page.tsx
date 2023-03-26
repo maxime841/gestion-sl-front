@@ -11,8 +11,9 @@ function ClubProfilPage() {
 
   return (
     <section>
-    <h1>{club.name}</h1><CarouselParties clubCurrent={club} />
-    <SectionPageProfilParties />
+      <h1>{club.name}</h1>
+      <CarouselParties clubCurrent={club} />
+      <SectionPageProfilParties clubCurrent={club} />
     </section>
   )
 }
