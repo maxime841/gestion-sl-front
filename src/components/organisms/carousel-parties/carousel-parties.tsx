@@ -1,10 +1,13 @@
 import { TPageProfilClub } from '@types-app/models/club.model'
-import React from 'react'
+import React, { useState } from 'react'
 import Slider from 'react-slick'
 import Carousel from 'react-multi-carousel'
 import 'react-multi-carousel/lib/styles.css'
+import { CardParties } from '@molecules/card-parties/card-parties'
 
 export default function CarouselParties({ clubCurrent }: TPageProfilClub) {
+  const [isShown, setIsShown] = useState(false)
+
   const responsive = {
     desktop: {
       breakpoint: { max: 3000, min: 768 },
@@ -27,30 +30,35 @@ export default function CarouselParties({ clubCurrent }: TPageProfilClub) {
     dots: true,
     infinite: true,
     speed: 500,
-    // slidesToShow: 3,
-    // slidesToScroll: 3,
     centerMode: true,
-    // autoplay: true
   }
+
   return (
   <div className="flex flex-col">
-    <h2> Les soirées du club {clubCurrent.name}</h2>
+    <h2 className="ml-10 mb-10"> Les soirées du club {clubCurrent.name}</h2>
           <Slider {...settings}>
           {clubCurrent.parties?.map(party => {
             return (
-              <Carousel responsive={responsive}>
-                <h3>{party.name}</h3>
+              <div>
+              <Carousel className="carousel"responsive={responsive} centerMode={true}>
+                <h3 className="ml-24">La soirée: {party.name}</h3>
                 {party.pictures?.map(picture => {
                   return (
                     <div>
                       <h4>{picture.name}</h4>
                       <img
+                        onMouseEnter={() => setIsShown(false)}
+                        onMouseLeave={() => setIsShown(true)}
                         src={picture.picture_url}
                         alt={picture.name} />
                     </div>
                     )
                   })}
               </Carousel>
+              <div className={`${isShown ? 'hidden' : 'block'}`}>
+              <CardParties partyCurrent={party} />
+              </div>
+            </div>
             )
             })}
           </Slider>

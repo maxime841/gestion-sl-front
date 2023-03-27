@@ -11,7 +11,6 @@ import LinkBtn from '@atoms/links/link-btn'
 
 export function CardClub() {
   const clubs = Store.club.useClubs()
-  console.log('mes clubs', clubs)
 
   return (
     <div className="flex justify-items-center">

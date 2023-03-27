@@ -1,5 +1,4 @@
 import CarouselParties from '@organisms/carousel-parties/carousel-parties'
-import { SectionPageProfilParties } from '@organisms/section-page-profil-parties/section-page-profil-parties'
 import { Store } from '@store/store'
 import React from 'react'
 import { useParams } from 'react-router-dom'
@@ -11,9 +10,8 @@ function ClubProfilPage() {
 
   return (
     <section>
-      <h1>{club.name}</h1>
+      <h1 className="text-center text-4xl">{club.name}</h1>
       <CarouselParties clubCurrent={club} />
-      <SectionPageProfilParties clubCurrent={club} />
     </section>
   )
 }
