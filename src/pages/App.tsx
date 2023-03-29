@@ -12,6 +12,8 @@ import ClubPage from './public/club-page'
 import ClubProfilPage from './public/club-profil-page'
 import DjPage from './public/dj-page'
 import DjProfilPage from './public/dj-profil-page'
+import HostPage from './public/host-page'
+import HostProfilPage from './public/host-profil-page'
 
 function App() {
   const navigate = useNavigate()
@@ -27,6 +29,8 @@ function App() {
       <Route path='/club/:clubId' element={<ClubProfilPage />} />
       <Route path='/dj' element={<DjPage />} />
       <Route path='/dj/:djId' element={<DjProfilPage />} />
+      <Route path='/host' element={<HostPage />} />
+      <Route path='/host/:hostId' element={<HostProfilPage />} />
       </Route>
       <Route element={<AuthGuard />}>
         <Route element={<TemplatePrivate />}>

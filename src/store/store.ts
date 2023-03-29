@@ -10,6 +10,9 @@ import { DarkModeStore } from './dark-mode/dark-mode.store'
 import { DjHook } from './dj/dj.hook'
 import { DjService } from './dj/dj.service'
 import { DjStore } from './dj/dj.store'
+import { HostHook } from './host/host.hook'
+import { HostService } from './host/host.service'
+import { HostStore } from './host/host.store'
 import { MenuBurgerHook } from './menu-burger/menu-burger.hook'
 import { MenuBurgerService } from './menu-burger/menu-burger.service'
 import { MenuBurgerStore } from './menu-burger/menu-burger.store'
@@ -55,5 +58,10 @@ export const Store = {
         ...DjStore,
         ...DjService,
         ...DjHook,
+      },
+      host: {
+        ...HostStore,
+        ...HostService,
+        ...HostHook,
       }
 }
