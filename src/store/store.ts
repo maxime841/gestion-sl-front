@@ -4,6 +4,9 @@ import { AppStore } from './app/app.store'
 import { ClubHook } from './club/club.hook'
 import { ClubService } from './club/club.service'
 import { ClubStore } from './club/club.store'
+import { DancerHook } from './dancer/dancer.hook'
+import { DancerService } from './dancer/dancer.service'
+import { DancerStore } from './dancer/dancer.store'
 import { DarkModeHook } from './dark-mode/dark-mode.hook'
 import { DarkModeService } from './dark-mode/dark-mode.service'
 import { DarkModeStore } from './dark-mode/dark-mode.store'
@@ -63,5 +66,10 @@ export const Store = {
         ...HostStore,
         ...HostService,
         ...HostHook,
+      },
+      dancer: {
+        ...DancerStore,
+        ...DancerService,
+        ...DancerHook,
       }
 }

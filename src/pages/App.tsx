@@ -14,6 +14,8 @@ import DjPage from './public/dj-page'
 import DjProfilPage from './public/dj-profil-page'
 import HostPage from './public/host-page'
 import HostProfilPage from './public/host-profil-page'
+import DancerPage from './public/dancer-page'
+import DancerProfilPage from './public/dancer-profil-page'
 
 function App() {
   const navigate = useNavigate()
@@ -31,6 +33,8 @@ function App() {
       <Route path='/dj/:djId' element={<DjProfilPage />} />
       <Route path='/host' element={<HostPage />} />
       <Route path='/host/:hostId' element={<HostProfilPage />} />
+      <Route path='/dancer' element={<DancerPage />} />
+      <Route path='/dancer/:dancerId' element={<DancerProfilPage />} />
       </Route>
       <Route element={<AuthGuard />}>
         <Route element={<TemplatePrivate />}>
