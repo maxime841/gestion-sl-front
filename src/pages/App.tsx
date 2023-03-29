@@ -10,6 +10,8 @@ import HomePage from './public/home-page'
 import AboutUsPage from './public/about-us-page'
 import ClubPage from './public/club-page'
 import ClubProfilPage from './public/club-profil-page'
+import DjPage from './public/dj-page'
+import DjProfilPage from './public/dj-profil-page'
 
 function App() {
   const navigate = useNavigate()
@@ -23,6 +25,8 @@ function App() {
       <Route path='/aboutus' element={<AboutUsPage />} />
       <Route path='/club' element={<ClubPage />} />
       <Route path='/club/:clubId' element={<ClubProfilPage />} />
+      <Route path='/dj' element={<DjPage />} />
+      <Route path='/dj/:djId' element={<DjProfilPage />} />
       </Route>
       <Route element={<AuthGuard />}>
         <Route element={<TemplatePrivate />}>

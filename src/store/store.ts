@@ -7,6 +7,9 @@ import { ClubStore } from './club/club.store'
 import { DarkModeHook } from './dark-mode/dark-mode.hook'
 import { DarkModeService } from './dark-mode/dark-mode.service'
 import { DarkModeStore } from './dark-mode/dark-mode.store'
+import { DjHook } from './dj/dj.hook'
+import { DjService } from './dj/dj.service'
+import { DjStore } from './dj/dj.store'
 import { MenuBurgerHook } from './menu-burger/menu-burger.hook'
 import { MenuBurgerService } from './menu-burger/menu-burger.service'
 import { MenuBurgerStore } from './menu-burger/menu-burger.store'
@@ -47,5 +50,10 @@ export const Store = {
         ...ClubStore,
         ...ClubService,
         ...ClubHook,
+      },
+      dj: {
+        ...DjStore,
+        ...DjService,
+        ...DjHook,
       }
 }

@@ -2,6 +2,7 @@ import LinkBtn from '@atoms/links/link-btn'
 import LogoPina from '../../assets/picture/Logo-pIna.png'
 import WamLogo from '../../assets/picture/logo_wam.jpg'
 import DreamGuadeloupe from '../../assets/picture/Dream_Gaudeloupe01.png'
+import LCDA from '../../assets/picture/LCDA.png'
 import React, { useState } from 'react'
 import '../App.css'
 
@@ -41,13 +42,13 @@ function DescriptionPage() {
 
               <div className="card w-96 bg-base-100 shadow-xl image-full rotate-[12deg]">
                   <figure>
-                      <img src="" alt="Continent africa" />
+                      <img src={LCDA} alt="Continent africa" />
                   </figure>
                   <div className="card-body">
                       <h2 className="card-title">Le continent d'afrique</h2>
                       <p>Un complex de deux clubs</p>
                       <div className="card-actions justify-end">
-                          <button className="btn btn-primary">Lire plus</button>
+                      <label htmlFor="my-modal-8" className="btn">Lire plus</label>
                       </div>
                   </div>
               </div>
@@ -108,6 +109,23 @@ function DescriptionPage() {
                   </div>
               </div>
             </div>
+
+             {/** **********************************Modal LCDA**************************************/}
+          <input type="checkbox" id="my-modal-8" className="modal-toggle" />
+          <div className="modal modal-bottom sm:modal-middle">
+              <div className="modal-box bg-black">
+              <img src={LCDA} alt="portrait club lcda" />
+                  <h3 className="font-bold text-lg">Description club Le continent d'Afrique</h3>
+                  <p className="py-4">Un club nomade qui traverse le continent D'Afrique, dans ses paysages époustouflants.
+                    Il pose son bivouac le temps de découvrir sa musique, son histoire, ses traditions et sa culture avant de reprendre la route.
+                    Nous vous proposons plusieurs styles de musique venus du Continent d'Afrique, ainsi que des musiques d'autres continents à titre exceptionnel.
+                 </p>
+                  <div className="modal-action">
+                      <label htmlFor="my-modal-8" className="btn">Fermer</label>
+                  </div>
+              </div>
+            </div>
+
 
                {/** **********************************Modal Dream guadeloupe**************************************/}
           <input type="checkbox" id="my-modal-7" className="modal-toggle" />

@@ -156,7 +156,7 @@ function AboutUsPage() {
           </MDBContainer>
         </div>
 
-        {/* profil naia */}
+        {/* profil naia et niko */}
         <div className="mr-2 w-96 rounded-xl" style={{ backgroundColor: '#eee' }}>
           <MDBContainer className="container py-5 h-100">
             <MDBRow className="justify-content-center align-items-center h-100">
@@ -167,18 +167,18 @@ function AboutUsPage() {
                       <MDBCardImage src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava2-bg.webp"
                         className="rounded-circle mx-auto" fluid style={{ width: '100px' }} />
                     </div>
-                    <MDBTypography tag="h4">Naia Queen</MDBTypography>
+                    <MDBTypography tag="h4">Naia Queen & Niko Laminsk</MDBTypography>
                     <MDBCardText className="text-muted mb-4">
-                      Owner Le continent d'Afrique
+                      Owners Le continent d'Afrique
                     </MDBCardText>
                     <div className="flex justify-center mb-4 pb-2">
-                      <LinkText link=''>
+                      <LinkText link='https://www.instagram.com/lecontinentdafriquesl/'>
                         <InstagramIcon />
                       </LinkText>
                       <LinkText link='https://www.flickr.com/photos/194852201@N08/'>
                         <FlickerIcon />
                       </LinkText>
-                      <LinkText link=''>
+                      <LinkText link='https://discord.com/invite/PZybQpsW'>
                         <DiscordIcon />
                       </LinkText>
                     </div>
@@ -235,53 +235,6 @@ function AboutUsPage() {
                       </div>
                       <div>
                         <MDBCardText className="mb-1 h5">27</MDBCardText>
-                        <MDBCardText className="small text-muted mb-0">Followers Discord</MDBCardText>
-                      </div>
-                    </div>
-                  </MDBCardBody>
-                </MDBCard>
-              </MDBCol>
-            </MDBRow>
-          </MDBContainer>
-        </div>
-
-        {/* profil niko */}
-        <div className="mr-2 w-96 rounded-xl" style={{ backgroundColor: '#eee' }}>
-          <MDBContainer className="container py-5 h-100">
-            <MDBRow className="justify-content-center align-items-center h-100">
-              <MDBCol md="12" xl="4">
-                <MDBCard style={{ borderRadius: '15px' }}>
-                  <MDBCardBody className="text-center">
-                    <div className="mt-3 mb-4">
-                      <MDBCardImage src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava2-bg.webp"
-                        className="rounded-circle mx-auto" fluid style={{ width: '100px' }} />
-                    </div>
-                    <MDBTypography tag="h4">ຖik໐ lค๓iຖŞk</MDBTypography>
-                    <MDBCardText className="text-muted mb-4">
-                      Owner Le continent d'afrique
-                    </MDBCardText>
-                    <div className="flex justify-center mb-4 pb-2">
-                      <LinkText link=''>
-                        <InstagramIcon />
-                      </LinkText>
-                      <LinkText link='https://www.flickr.com/photos/194852201@N08/'>
-                        <FlickerIcon />
-                      </LinkText>
-                      <LinkText link=''>
-                        <DiscordIcon />
-                      </LinkText>
-                    </div>
-                    <div className="d-flex justify-content-between text-center mt-5 mb-2">
-                      <div>
-                        <MDBCardText className="mb-1 h5">8471</MDBCardText>
-                        <MDBCardText className="small text-muted mb-0">Followers Instagram</MDBCardText>
-                      </div>
-                      <div className="px-3">
-                        <MDBCardText className="mb-1 h5">8512</MDBCardText>
-                        <MDBCardText className="small text-muted mb-0">Followers Flicker</MDBCardText>
-                      </div>
-                      <div>
-                        <MDBCardText className="mb-1 h5">4751</MDBCardText>
                         <MDBCardText className="small text-muted mb-0">Followers Discord</MDBCardText>
                       </div>
                     </div>
