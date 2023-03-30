@@ -19,6 +19,9 @@ import { HostStore } from './host/host.store'
 import { MenuBurgerHook } from './menu-burger/menu-burger.hook'
 import { MenuBurgerService } from './menu-burger/menu-burger.service'
 import { MenuBurgerStore } from './menu-burger/menu-burger.store'
+import { ShopHook } from './shop/shop.hook'
+import { ShopService } from './shop/shop.service'
+import { ShopStore } from './shop/shop.store'
 import { TokenHook } from './token/token.hook'
 import { TokenService } from './token/token.service'
 import { TokenStore } from './token/token.store'
@@ -71,5 +74,10 @@ export const Store = {
         ...DancerStore,
         ...DancerService,
         ...DancerHook,
-      }
+      },
+      shop: {
+        ...ShopStore,
+        ...ShopService,
+        ...ShopHook,
+      },
 }

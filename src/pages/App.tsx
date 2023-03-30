@@ -16,6 +16,8 @@ import HostPage from './public/host-page'
 import HostProfilPage from './public/host-profil-page'
 import DancerPage from './public/dancer-page'
 import DancerProfilPage from './public/dancer-profil-page'
+import ShopPage from './public/shop-page'
+import ShopProfilPage from './public/shop-profil-page'
 
 function App() {
   const navigate = useNavigate()
@@ -35,6 +37,8 @@ function App() {
       <Route path='/host/:hostId' element={<HostProfilPage />} />
       <Route path='/dancer' element={<DancerPage />} />
       <Route path='/dancer/:dancerId' element={<DancerProfilPage />} />
+      <Route path='/shop' element={<ShopPage />} />
+      <Route path='/shop/:shopId' element={<ShopProfilPage />} />
       </Route>
       <Route element={<AuthGuard />}>
         <Route element={<TemplatePrivate />}>

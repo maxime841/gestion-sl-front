@@ -175,7 +175,7 @@ function AboutUsPage() {
                       <LinkText link='https://www.instagram.com/lecontinentdafriquesl/'>
                         <InstagramIcon />
                       </LinkText>
-                      <LinkText link='https://www.flickr.com/photos/194852201@N08/'>
+                      <LinkText link=' https://www.flickr.com/photos/197996858@N07/'>
                         <FlickerIcon />
                       </LinkText>
                       <LinkText link='https://discord.com/invite/PZybQpsW'>
