@@ -78,6 +78,14 @@ function BtnIconMenuBurger({ addClass }: TBtnMenuBurger) {
               <span className='ml-2'>Nos Shops</span>
             </LinkBtn>
           </li>
+
+          {/* link loisir */}
+          <li className='mt-2 mx-2'>
+            <LinkBtn link='/hobby'>
+              <ShopIcon size='w-5 h-5' />
+              <span className='ml-2'>Loisir</span>
+            </LinkBtn>
+          </li>
         </ul>
       ) : null}
     </div>

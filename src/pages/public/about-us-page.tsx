@@ -31,15 +31,10 @@ function AboutUsPage() {
                       Owner TTC Tatoo Shop
                     </MDBCardText>
                     <div className="flex justify-center mb-4 pb-2">
-                      <LinkText link=''>
-                        <InstagramIcon />
-                      </LinkText>
-                      <LinkText link='https://www.flickr.com/photos/194852201@N08/'>
-                        <FlickerIcon />
-                      </LinkText>
-                      <LinkText link=''>
-                        <DiscordIcon />
-                      </LinkText>
+                      <a className="mx-3" href="" target="_blank"><InstagramIcon /></a>
+                      <a className="mx-3" href="" target="_blank"><FlickerIcon /></a>
+                      <a className="mx-3" href="" target="_blank"><DiscordIcon /></a>
+                      <a className="mx-3" href="" target="_blank"><img className="w-5" src={Second_life_logo} alt="logo second life" /></a>
                     </div>
                     <div className="d-flex justify-content-between text-center mt-5 mb-2">
                       <div>
@@ -78,15 +73,10 @@ function AboutUsPage() {
                       Owner Dream Guadeloupe
                     </MDBCardText>
                     <div className="flex justify-center mb-4 pb-2">
-                      <LinkText link=''>
-                        <InstagramIcon />
-                      </LinkText>
-                      <LinkText link='https://www.flickr.com/photos/194852201@N08/'>
-                        <FlickerIcon />
-                      </LinkText>
-                      <LinkText link=''>
-                        <DiscordIcon />
-                      </LinkText>
+                      <a className="mx-3" href="" target="_blank"><InstagramIcon /></a>
+                      <a className="mx-3" href="" target="_blank"><FlickerIcon /></a>
+                      <a className="mx-3" href="" target="_blank"><DiscordIcon /></a>
+                      <a className="mx-3" href="" target="_blank"><img className="w-5" src={Second_life_logo} alt="logo second life" /></a>
                     </div>
                     <div className="d-flex justify-content-between text-center mt-5 mb-2">
                       <div>
@@ -125,15 +115,10 @@ function AboutUsPage() {
                       Owner Layali
                     </MDBCardText>
                     <div className="flex justify-center mb-4 pb-2">
-                      <LinkText link=''>
-                        <InstagramIcon />
-                      </LinkText>
-                      <LinkText link='https://www.flickr.com/photos/194852201@N08/'>
-                        <FlickerIcon />
-                      </LinkText>
-                      <LinkText link=''>
-                        <DiscordIcon />
-                      </LinkText>
+                      <a className="mx-3" href="" target="_blank"><InstagramIcon /></a>
+                      <a className="mx-3" href="" target="_blank"><FlickerIcon /></a>
+                      <a className="mx-3" href="" target="_blank"><DiscordIcon /></a>
+                      <a className="mx-3" href="" target="_blank"><img className="w-5" src={Second_life_logo} alt="logo second life" /></a>
                     </div>
                     <div className="d-flex justify-content-between text-center mt-5 mb-2">
                       <div>
@@ -172,15 +157,10 @@ function AboutUsPage() {
                       Owners Le continent d'Afrique
                     </MDBCardText>
                     <div className="flex justify-center mb-4 pb-2">
-                      <LinkText link='https://www.instagram.com/lecontinentdafriquesl/'>
-                        <InstagramIcon />
-                      </LinkText>
-                      <LinkText link=' https://www.flickr.com/photos/197996858@N07/'>
-                        <FlickerIcon />
-                      </LinkText>
-                      <LinkText link='https://discord.com/invite/PZybQpsW'>
-                        <DiscordIcon />
-                      </LinkText>
+                      <a className="mx-3" href="https://www.instagram.com/lecontinentdafriquesl/" target="_blank"><InstagramIcon /></a>
+                      <a className="mx-3" href="https://www.flickr.com/photos/197996858@N07/" target="_blank"><FlickerIcon /></a>
+                      <a className="mx-3" href="https://discord.com/invite/PZybQpsW" target="_blank"><DiscordIcon /></a>
+                      <a className="mx-3" href="" target="_blank"><img className="w-5" src={Second_life_logo} alt="logo second life" /></a>
                     </div>
                     <div className="d-flex justify-content-between text-center mt-5 mb-2">
                       <div>
@@ -261,15 +241,10 @@ function AboutUsPage() {
                       Owner Pina Colada District
                     </MDBCardText>
                     <div className="flex justify-center mb-4 pb-2">
-                      <LinkText link=''>
-                        <InstagramIcon />
-                      </LinkText>
-                      <LinkText link='https://www.flickr.com/photos/194852201@N08/'>
-                        <FlickerIcon />
-                      </LinkText>
-                      <LinkText link=''>
-                        <DiscordIcon />
-                      </LinkText>
+                      <a className="mx-3" href="" target="_blank"><InstagramIcon /></a>
+                      <a className="mx-3" href="" target="_blank"><FlickerIcon /></a>
+                      <a className="mx-3" href="" target="_blank"><DiscordIcon /></a>
+                      <a className="mx-3" href="" target="_blank"><img className="w-5" src={Second_life_logo} alt="logo second life" /></a>
                     </div>
                     <div className="d-flex justify-content-between text-center mt-5 mb-2">
                       <div>

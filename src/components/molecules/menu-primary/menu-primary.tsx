@@ -6,6 +6,7 @@ import DjIcon from '../../atoms/icons/dj-icon'
 import HostIcon from '../../atoms/icons/host-icon'
 import DancerIcon from '../../atoms/icons/dancer-icon'
 import ShopIcon from '../../atoms/icons/shop-icon'
+import LoisirIcon from '@atoms/icons/loisir-icon'
 
 function MenuPrimary () {
   return (
@@ -55,6 +56,14 @@ function MenuPrimary () {
         <LinkBtn link='/shop' addClass='w-10 h-4 mx-1'>
           <ShopIcon size='w-5 h-5' />
           <span className='ml-2'>Nos Shops</span>
+        </LinkBtn>
+      </li>
+
+      {/* link loisir */}
+      <li>
+        <LinkBtn link='/hobby' addClass='w-10 h-5 mx-1'>
+          <LoisirIcon size='w-5 h-5'/>
+          <span className='ml-2'>Loisir</span>
         </LinkBtn>
       </li>
     </ul>

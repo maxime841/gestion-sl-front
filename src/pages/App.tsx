@@ -18,6 +18,8 @@ import DancerPage from './public/dancer-page'
 import DancerProfilPage from './public/dancer-profil-page'
 import ShopPage from './public/shop-page'
 import ShopProfilPage from './public/shop-profil-page'
+import HobbyPage from './public/hobby-page'
+import HobbyProfilPage from './public/hobby-profil-page'
 
 function App() {
   const navigate = useNavigate()
@@ -39,6 +41,8 @@ function App() {
       <Route path='/dancer/:dancerId' element={<DancerProfilPage />} />
       <Route path='/shop' element={<ShopPage />} />
       <Route path='/shop/:shopId' element={<ShopProfilPage />} />
+      <Route path='/hobby' element={<HobbyPage />} />
+      <Route path='/hobby/:hobbyId' element={<HobbyProfilPage />} />
       </Route>
       <Route element={<AuthGuard />}>
         <Route element={<TemplatePrivate />}>

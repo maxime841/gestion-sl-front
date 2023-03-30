@@ -13,6 +13,9 @@ import { DarkModeStore } from './dark-mode/dark-mode.store'
 import { DjHook } from './dj/dj.hook'
 import { DjService } from './dj/dj.service'
 import { DjStore } from './dj/dj.store'
+import { HobbyHook } from './hobby/hobby.hook'
+import { HobbyService } from './hobby/hobby.service'
+import { HobbyStore } from './hobby/hobby.store'
 import { HostHook } from './host/host.hook'
 import { HostService } from './host/host.service'
 import { HostStore } from './host/host.store'
@@ -79,5 +82,10 @@ export const Store = {
         ...ShopStore,
         ...ShopService,
         ...ShopHook,
+      },
+      hobby: {
+        ...HobbyStore,
+        ...HobbyService,
+        ...HobbyHook,
       },
 }
