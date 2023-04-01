@@ -13,11 +13,11 @@ export function CardDj() {
   const djs = Store.dj.useDjs()
 
   return (
-    <div className="grid grid-cols-4 gap-5">
+    <div className="grid grid-cols-4 gap-5 items-center mx-10">
       {
         djs.map(dj => (
           <>
-            <Card className="h-[520px] w-full max-w-[26rem] shadow-lg px-2">
+            <Card className="h-fit w-full max-w-[26rem] shadow-lg px-2 bg-white">
       <CardHeader floated={false} color="blue-gray">
         <img
           className="mt-5"
@@ -28,7 +28,7 @@ export function CardDj() {
       </CardHeader>
       <CardBody>
         <div className="mb-3 flex items-center justify-between px-2">
-          <Typography variant="h5" color="blue-gray" className="font-medium ">
+          <Typography variant="h5" color="blue-gray" className="font-semibold text-2xl">
             {dj.name}
           </Typography>
         </div>

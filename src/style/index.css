@@ -12,6 +12,38 @@ code {
     monospace;
 }
 
+.fond-ecran {
+  background-image: url(../assets/picture/bg-ecran-deco.jpg)
+}
+
+.fond-ecran-bis {
+  background-image: url(../assets/picture/fond-feuille.avif)
+}
+
+.fond-ecran-ter {
+  background-image: url(../assets/picture/fond-feuille-bis.avif)
+}
+
+.fond-ecran-quart {
+  background-image: url(../assets/picture/fond-ecran-quart.jpg)
+}
+
+.fond-palmier {
+  background-image: url(../assets/picture/fond-palmier.jpg)
+}
+
+.fond-ecran-club {
+  background-image: url(../assets/picture/motif-disco.jpg)
+}
+
+.fond-ecran-club-bis {
+  background-image: url(../assets/picture/sound-wave.jpg)
+}
+
+.neon {
+  background-image: url(../assets/picture/neon.jpg)
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

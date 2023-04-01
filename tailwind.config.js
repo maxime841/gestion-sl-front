@@ -6,18 +6,18 @@ module.exports = {
       extend: {
         fontFamily: {
           body: ['Roboto', 'sans-serif'],
-          title: ['charm'],
+          title: ['Anton'],
           text: ['Indie flower'],
         },
         colors: {
-          fond_claire: '#E6E697',
+          //fond_claire: '#F5F5DC',
           fond_dark: '#BF4900',
           'fond-cards': '#EFD242',
           'fond-dark-cards': '#FF7F00',
           input_color: '#FBF2B7',
-          fond_header: '#288990',
+          fond_header: '#7f00ff',
           color_title: '#75C9E3',
-          fond_color_button: '#A5D152',
+          fond_color_button: '#F5F5DC',
           action: '#6C0277',
           'action-hover': '#6C0277',
           'action-bg-hover': '#CCCCCC',

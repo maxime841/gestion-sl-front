@@ -10,7 +10,7 @@ function HostProfilPage() {
 
   return (
     <section>
-      <h1 className="text-center text-4xl">{host.name}</h1>
+      <h1 className="font-title text-center text-white text-8xl uppercase mt-12 font-extrabold mb-10 underline">{host.name}</h1>
       <SectionPageProfilHost hostCurrent={host} />
     </section>
   )

@@ -9,6 +9,8 @@ import Neyney from '../../assets/picture/neyney_picture.jpg'
 import Second_life_logo from '../../assets/picture/second_life_logo.png'
 import Arno from '../../assets/picture/portrait_arno_202301.png'
 import { Store } from '@store/store'
+import FacebookIcon from '@atoms/icons/facebook-icon'
+import Maturin from '../../assets/picture/matu-profil-retouche.png'
 
 function AboutUsPage() {
   return (
@@ -99,38 +101,33 @@ function AboutUsPage() {
           </MDBContainer>
         </div>
 
-        {/* profil Bolly */}
-        <div className="mr-2 w-96 rounded-xl" style={{ backgroundColor: '#40E0D0' }}>
+        {/* profil Maturin */}
+        <div className="mr-2 w-96 rounded-xl" style={{ backgroundColor: '#DA70D6' }}>
           <MDBContainer className="container py-5 h-100">
             <MDBRow className="justify-content-center align-items-center h-100">
               <MDBCol md="12" xl="4">
                 <MDBCard style={{ borderRadius: '15px' }}>
                   <MDBCardBody className="text-center">
                     <div className="mt-3 mb-4">
-                      <MDBCardImage src={Arno}
+                      <MDBCardImage src={Maturin}
                         className="rounded-full mx-auto" fluid style={{ width: '120px', height: '120px' }} />
                     </div>
-                    <MDBTypography tag="h4">Bolly coco</MDBTypography>
+                    <MDBTypography tag="h4">Maturin Captain</MDBTypography>
                     <MDBCardText className="text-muted mb-4">
-                      Owner Layali
+                      Owner MC Stream Club & Shop de stream & Shop The Ultimate Wedding & MP Ranch Estate & Shop MC Creation
                     </MDBCardText>
                     <div className="flex justify-center mb-4 pb-2">
-                      <a className="mx-3" href="" target="_blank"><InstagramIcon /></a>
-                      <a className="mx-3" href="" target="_blank"><FlickerIcon /></a>
-                      <a className="mx-3" href="" target="_blank"><DiscordIcon /></a>
-                      <a className="mx-3" href="" target="_blank"><img className="w-5" src={Second_life_logo} alt="logo second life" /></a>
+                      <a className="mx-3" href="https://www.facebook.com/profile.php?id=100090085238976" target="_blank"><FacebookIcon /></a>
+                      <a className="mx-3" href="https://discord.gg/sFjBEU9Y" target="_blank"><DiscordIcon /></a>
+                      <a className="mx-3" href="http://maps.secondlife.com/secondlife/MP%20Ranch%202/31/27/23" target="_blank"><img className="w-5" src={Second_life_logo} alt="logo second life" /></a>
                     </div>
                     <div className="d-flex justify-content-between text-center mt-5 mb-2">
-                      <div>
-                        <MDBCardText className="mb-1 h5">8471</MDBCardText>
-                        <MDBCardText className="small text-muted mb-0">Followers Instagram</MDBCardText>
-                      </div>
                       <div className="px-3">
-                        <MDBCardText className="mb-1 h5">8512</MDBCardText>
-                        <MDBCardText className="small text-muted mb-0">Followers Flicker</MDBCardText>
+                        <MDBCardText className="mb-1 h5">12</MDBCardText>
+                        <MDBCardText className="small text-muted mb-0">Followers Facebook</MDBCardText>
                       </div>
                       <div>
-                        <MDBCardText className="mb-1 h5">4751</MDBCardText>
+                        <MDBCardText className="mb-1 h5">6</MDBCardText>
                         <MDBCardText className="small text-muted mb-0">Followers Discord</MDBCardText>
                       </div>
                     </div>
@@ -215,6 +212,48 @@ function AboutUsPage() {
                       </div>
                       <div>
                         <MDBCardText className="mb-1 h5">27</MDBCardText>
+                        <MDBCardText className="small text-muted mb-0">Followers Discord</MDBCardText>
+                      </div>
+                    </div>
+                  </MDBCardBody>
+                </MDBCard>
+              </MDBCol>
+            </MDBRow>
+          </MDBContainer>
+        </div>
+
+         {/* profil patronna */}
+         <div className="mr-2 w-96 rounded-xl" style={{ backgroundColor: '#fff' }}>
+          <MDBContainer className="container py-5 h-100">
+            <MDBRow className="justify-content-center align-items-center h-100">
+              <MDBCol md="12" xl="4">
+                <MDBCard style={{ borderRadius: '15px' }}>
+                  <MDBCardBody className="text-center">
+                    <div className="mt-3 mb-4">
+                      <MDBCardImage src=""
+                        className="rounded-full mx-auto" fluid style={{ width: '120px', height: '120px' }} />
+                    </div>
+                    <MDBTypography tag="h4">Lpatronna</MDBTypography>
+                    <MDBCardText className="text-muted mb-4">
+                      Owner Blackpearl club $ Owner Hotel Patronna
+                    </MDBCardText>
+                    <div className="flex justify-center mb-4 pb-2">
+                      <a className="mx-3" href="" target="_blank"><InstagramIcon /></a>
+                      <a className="mx-3" href="" target="_blank"><FlickerIcon /></a>
+                      <a className="mx-3" href="" target="_blank"><DiscordIcon /></a>
+                      <a className="mx-3" href="" target="_blank"><img className="w-5" src={Second_life_logo} alt="logo second life" /></a>
+                    </div>
+                    <div className="d-flex justify-content-between text-center mt-5 mb-2">
+                      <div>
+                        <MDBCardText className="mb-1 h5">8471</MDBCardText>
+                        <MDBCardText className="small text-muted mb-0">Followers Instagram</MDBCardText>
+                      </div>
+                      <div className="px-3">
+                        <MDBCardText className="mb-1 h5">8512</MDBCardText>
+                        <MDBCardText className="small text-muted mb-0">Followers Flicker</MDBCardText>
+                      </div>
+                      <div>
+                        <MDBCardText className="mb-1 h5">4751</MDBCardText>
                         <MDBCardText className="small text-muted mb-0">Followers Discord</MDBCardText>
                       </div>
                     </div>

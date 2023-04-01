@@ -11,7 +11,7 @@ function DjProfilPage() {
 
   return (
     <section>
-      <h1 className="text-center text-4xl">{dj.name}</h1>
+      <h1 className="font-title text-center text-white text-8xl uppercase mt-12 font-extrabold mb-10 underline">{dj.name}</h1>
       <SectionPageProfilDj djCurrent={dj} />
     </section>
   )

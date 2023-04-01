@@ -4,7 +4,7 @@ import '../App.css'
 
 function ClubPage() {
   return (
-    <section>
+    <section className='fond-ecran-club'>
      <SectionListClub />
     </section>
   )

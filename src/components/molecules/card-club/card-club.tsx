@@ -13,11 +13,11 @@ export function CardClub() {
   const clubs = Store.club.useClubs()
 
   return (
-    <div className="flex justify-items-center">
+    <div className="flex justify-items-center items-center">
       {clubs ? (
         clubs.map(club => (
           <>
-            <Card className="h-[490px] w-full max-w-[26rem] shadow-lg px-2">
+            <Card className="h-fit w-full max-w-[26rem] shadow-lg px-2 mx-10">
       <CardHeader floated={false} color="blue-gray">
         <img
           className="mt-5"
@@ -28,7 +28,7 @@ export function CardClub() {
       </CardHeader>
       <CardBody>
         <div className="mb-3 flex items-center justify-between px-2">
-          <Typography variant="h5" color="blue-gray" className="font-medium ">
+          <Typography variant="h5" color="blue-gray" className="font-semibold text-2xl ">
             {club.name}
           </Typography>
         </div>

@@ -35,18 +35,19 @@ export default function CarouselParties({ clubCurrent }: TPageProfilClub) {
 
   return (
   <div className="flex flex-col">
-    <h2 className="ml-10 mb-10"> Les soirées du club {clubCurrent.name}</h2>
+    <h2 className="ml-10 mb-10 border-1 bg-green-100 p-4 text-2xl w-fit"> Les soirées du club {clubCurrent.name}</h2>
           <Slider {...settings}>
           {clubCurrent.parties?.map(party => {
             return (
               <div>
-              <Carousel className="carousel"responsive={responsive} centerMode={true}>
-                <h3 className="ml-24">La soirée: {party.name}</h3>
+              <Carousel className="carousel"responsive={responsive} centerMode={true} removeArrowOnDeviceType={['tablet', 'mobile']} itemClass="carousel-item-padding-40-px">
+                <h3 className="ml-24 text-white text-2xl">La soirée: {party.name}</h3>
                 {party.pictures?.map(picture => {
                   return (
-                    <div>
+                    <div className="">
                       <h4>{picture.name}</h4>
                       <img
+                        className='h-[300px]'
                         onMouseEnter={() => setIsShown(false)}
                         onMouseLeave={() => setIsShown(true)}
                         src={picture.picture_url}
