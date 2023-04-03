@@ -35,18 +35,19 @@ export default function CarouselActivities({ hobbyCurrent }: TPageProfilHobby) {
 
   return (
   <div className="flex flex-col">
-    <h2 className="ml-10 mb-10"> Les articles du terrain de loisir {hobbyCurrent.name}</h2>
+    <h2 className="ml-10 mb-10 border-1 bg-green-100 p-4 text-2xl w-fit"> Les articles du terrain de loisir {hobbyCurrent.name}</h2>
           <Slider {...settings}>
           {hobbyCurrent.activities?.map(activity => {
             return (
-              <div>
+              <div key={activity.id}>
               <Carousel className="carousel"responsive={responsive} centerMode={true}>
-                <h3 className="ml-24">L'activité: {activity.name}</h3>
+                <h3 className="ml-24 text-white text-2xl">L'activité: {activity.name}</h3>
                 {activity.pictures?.map(picture => {
                   return (
-                    <div>
-                      <h4>{picture.name}</h4>
+                    <div key={picture.id}>
+                      <h4 className='text-white'>{picture.name}</h4>
                       <img
+                        className='h-[300px]'
                         onMouseEnter={() => setIsShown(false)}
                         onMouseLeave={() => setIsShown(true)}
                         src={picture.picture_url}

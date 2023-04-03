@@ -23,8 +23,8 @@ function FlickerIcon ({ color, size }: TIcons) {
                 gradientUnits="userSpaceOnUse">
                     <stop
                         offset="0"
-                        stop-color="#f0f0f0"/>
-                    <stop offset="1" stop-color="#bbc1c4"/>
+                        stopColor="#f0f0f0"/>
+                    <stop offset="1" stopColor="#bbc1c4"/>
             </linearGradient>
             <path
                 fill="url(#JgUXPL7C3ZUWF61kqVZ_Sa)"
@@ -56,8 +56,8 @@ function FlickerIcon ({ color, size }: TIcons) {
                 y1="18.875"
                 y2="29.125"
                 gradientUnits="userSpaceOnUse">
-            <stop offset="0" stop-color="#0d61a9"/>
-            <stop offset="1" stop-color="#16528c"/>
+            <stop offset="0" stopColor="#0d61a9"/>
+            <stop offset="1" stopColor="#16528c"/>
             </linearGradient>
             <path
                 fill="url(#JgUXPL7C3ZUWF61kqVZ_Sb)"

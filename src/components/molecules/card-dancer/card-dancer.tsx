@@ -13,11 +13,11 @@ export function CardDancer() {
   const dancers = Store.dancer.useDancers()
 
   return (
-    <div className="grid grid-cols-4 gap-5">
+    <div className="grid grid-cols-4 gap-5 items-center">
       {
         dancers.map(dancer => (
-          <>
-            <Card className="h-[520px] w-full max-w-[26rem] shadow-lg px-2">
+          <div key={dancer.id} className="h-fit w-full max-w-[26rem] shadow-lg px-2 mx-5">
+            <Card>
       <CardHeader floated={false} color="blue-gray">
         <img
           className="mt-5"
@@ -28,7 +28,7 @@ export function CardDancer() {
       </CardHeader>
       <CardBody>
         <div className="mb-3 flex items-center justify-between px-2">
-          <Typography variant="h5" color="blue-gray" className="font-medium ">
+          <Typography variant="h5" color="blue-gray" className="font-semibold text-2xl ">
             {dancer.name}
           </Typography>
         </div>
@@ -42,7 +42,7 @@ export function CardDancer() {
         </LinkBtn>
       </CardFooter>
     </Card>
-          </>
+          </div>
         ))}
     </div>
   )

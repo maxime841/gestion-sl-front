@@ -4,6 +4,9 @@ import { AppStore } from './app/app.store'
 import { ClubHook } from './club/club.hook'
 import { ClubService } from './club/club.service'
 import { ClubStore } from './club/club.store'
+import { CommentaireClubHook } from './commentaireClub/commentaireClub.hook'
+import { CommentaireClubService } from './commentaireClub/commentaireClub.service'
+import { CommentaireClubStore } from './commentaireClub/commentaireClub.store'
 import { DancerHook } from './dancer/dancer.hook'
 import { DancerService } from './dancer/dancer.service'
 import { DancerStore } from './dancer/dancer.store'
@@ -87,5 +90,10 @@ export const Store = {
         ...HobbyStore,
         ...HobbyService,
         ...HobbyHook,
+      },
+      commentaireClub: {
+        ...CommentaireClubStore,
+        ...CommentaireClubService,
+        ...CommentaireClubHook,
       },
 }

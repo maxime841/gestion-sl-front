@@ -16,8 +16,8 @@ export function CardClub() {
     <div className="flex justify-items-center items-center">
       {clubs ? (
         clubs.map(club => (
-          <>
-            <Card className="h-fit w-full max-w-[26rem] shadow-lg px-2 mx-10">
+          <div key={club.id} className="h-fit w-full max-w-[26rem] shadow-lg px-2 mx-10">
+            <Card>
       <CardHeader floated={false} color="blue-gray">
         <img
           className="mt-5"
@@ -42,7 +42,7 @@ export function CardClub() {
         </LinkBtn>
       </CardFooter>
     </Card>
-          </>
+          </div>
         ))
       ) : (
         <p>loading ...</p>

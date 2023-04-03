@@ -13,11 +13,11 @@ export function CardHobby() {
   const hobbies = Store.hobby.useHobbies()
 
   return (
-    <div className="flex justify-items-center">
+    <div className="grid grid-cols-4 gap-5 items-center mx-10">
       {hobbies ? (
         hobbies.map(hobby => (
-          <>
-            <Card className="h-[490px] w-full max-w-[26rem] shadow-lg px-2">
+          <div key={hobby.id } className="h-fit w-full max-w-[26rem] shadow-lg px-2 bg-white">
+            <Card>
       <CardHeader floated={false} color="blue-gray">
         <img
           className="mt-5"
@@ -28,7 +28,7 @@ export function CardHobby() {
       </CardHeader>
       <CardBody>
         <div className="mb-3 flex items-center justify-between px-2">
-          <Typography variant="h5" color="blue-gray" className="font-medium ">
+          <Typography variant="h5" color="blue-gray" className="font-semibold text-2xl">
             {hobby.name}
           </Typography>
         </div>
@@ -42,7 +42,7 @@ export function CardHobby() {
         </LinkBtn>
       </CardFooter>
     </Card>
-          </>
+          </div>
         ))
       ) : (
         <p>loading ...</p>

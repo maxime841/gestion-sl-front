@@ -9,7 +9,7 @@ function ShopProfilPage() {
   const shop = Store.shop.useShop(shopId!)
 
   return (
-    <section>
+    <section className='fond-ecran-shop bg-cover'>
       <h1 className="text-center text-4xl">{shop.name}</h1>
       <CarouselArticles shopCurrent={shop} />
     </section>

@@ -10,8 +10,8 @@ function DjProfilPage() {
   console.log('mon dj', dj)
 
   return (
-    <section>
-      <h1 className="font-title text-center text-white text-8xl uppercase mt-12 font-extrabold mb-10 underline">{dj.name}</h1>
+    <section className='fond-ecran-dj bg-contain'>
+      <h1 className="font-title text-center text-white text-8xl uppercase py-8 font-extrabold mb-10 underline">{dj.name}</h1>
       <SectionPageProfilDj djCurrent={dj} />
     </section>
   )

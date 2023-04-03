@@ -5,7 +5,7 @@ import React from 'react'
 export function SectionListHobby() {
     return (
     <section>
-      <Title addClass='mb-8 font-bold text-3xl'>Liste des terrains de loisir</Title>
+      <Title addClass='font-title text-center text-white text-8xl uppercase py-8 font-extrabold mb-10 underline'>Liste des terrains de loisir</Title>
       <div className='hobby-list-box'>
         <CardHobby />
       </div>

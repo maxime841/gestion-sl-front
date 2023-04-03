@@ -4,19 +4,18 @@ import { MDBCol, MDBContainer, MDBRow, MDBCard, MDBCardText, MDBCardBody, MDBCar
 import InstagramIcon from '@atoms/icons/instagram-icon'
 import FlickerIcon from '@atoms/icons/flicker-icon'
 import DiscordIcon from '@atoms/icons/discord-icon'
-import LinkText from '@atoms/links/link-text'
 import Neyney from '../../assets/picture/neyney_picture.jpg'
 import Second_life_logo from '../../assets/picture/second_life_logo.png'
 import Arno from '../../assets/picture/portrait_arno_202301.png'
-import { Store } from '@store/store'
 import FacebookIcon from '@atoms/icons/facebook-icon'
 import Maturin from '../../assets/picture/matu-profil-retouche.png'
+import Patronna from '../../assets/picture/moi-coeur.png'
 
 function AboutUsPage() {
   return (
     <>
-      <h1 className="text-center mb-4 text-4xl">Qui sommes nous?</h1>
-    <section className="flex grid sm: grid-cols-1 md:grid-cols-2 gap-x-4 gap-y-8 ml-16 mr-16 lg:grid-cols-4 gap-x-16 gap-y-16">
+      <h1 className="font-title text-center py-8  text-white text-8xl uppercase font-extrabold underline">Qui sommes nous?</h1>
+    <section className="grid sm:grid-cols-1 md:grid-cols-2 ml-16 mr-16 lg:grid-cols-4 gap-x-16 gap-y-16">
       {/* profil Anteus */}
       <div className="mr-2 w-96 rounded-xl" style={{ backgroundColor: '#eee' }}>
           <MDBContainer className="container py-5 h-100">
@@ -223,14 +222,14 @@ function AboutUsPage() {
         </div>
 
          {/* profil patronna */}
-         <div className="mr-2 w-96 rounded-xl" style={{ backgroundColor: '#fff' }}>
+         <div className="mr-2 w-96 rounded-xl" style={{ backgroundColor: '#dc143c' }}>
           <MDBContainer className="container py-5 h-100">
             <MDBRow className="justify-content-center align-items-center h-100">
               <MDBCol md="12" xl="4">
                 <MDBCard style={{ borderRadius: '15px' }}>
                   <MDBCardBody className="text-center">
                     <div className="mt-3 mb-4">
-                      <MDBCardImage src=""
+                      <MDBCardImage src={Patronna}
                         className="rounded-full mx-auto" fluid style={{ width: '120px', height: '120px' }} />
                     </div>
                     <MDBTypography tag="h4">Lpatronna</MDBTypography>
@@ -238,10 +237,10 @@ function AboutUsPage() {
                       Owner Blackpearl club $ Owner Hotel Patronna
                     </MDBCardText>
                     <div className="flex justify-center mb-4 pb-2">
-                      <a className="mx-3" href="" target="_blank"><InstagramIcon /></a>
-                      <a className="mx-3" href="" target="_blank"><FlickerIcon /></a>
-                      <a className="mx-3" href="" target="_blank"><DiscordIcon /></a>
-                      <a className="mx-3" href="" target="_blank"><img className="w-5" src={Second_life_logo} alt="logo second life" /></a>
+                      <a className="mx-3" href="https://www.instagram.com/le.blackpearl_club/" target="_blank"><InstagramIcon /></a>
+                      <a className="mx-3" href="https://www.instagram.com/hotel.patronna/" target="_blank"><InstagramIcon /></a>
+                      <a className="mx-3" href="http://maps.secondlife.com/secondlife/Laveykin/212/228/46" target="_blank"><img className="w-5" src={Second_life_logo} alt="logo second life" /></a>
+                      <a className="mx-3" href="http://maps.secondlife.com/secondlife/CHICCO%20ISLAND/40/29/21" target="_blank"><img className="w-5" src={Second_life_logo} alt="logo second life" /></a>
                     </div>
                     <div className="d-flex justify-content-between text-center mt-5 mb-2">
                       <div>
@@ -277,13 +276,14 @@ function AboutUsPage() {
                     </div>
                     <MDBTypography tag="h4">Pretty Panthera</MDBTypography>
                     <MDBCardText className="text-muted mb-4">
-                      Owner Pina Colada District
+                      Owner Pina Colada District & Jersey Short Pose Shop
                     </MDBCardText>
                     <div className="flex justify-center mb-4 pb-2">
                       <a className="mx-3" href="" target="_blank"><InstagramIcon /></a>
                       <a className="mx-3" href="" target="_blank"><FlickerIcon /></a>
                       <a className="mx-3" href="" target="_blank"><DiscordIcon /></a>
                       <a className="mx-3" href="" target="_blank"><img className="w-5" src={Second_life_logo} alt="logo second life" /></a>
+                      <a className="mx-3" href="http://maps.secondlife.com/secondlife/Lavender%20Island/151/25/23" target="_blank"><img className="w-5" src={Second_life_logo} alt="logo second life" /></a>
                     </div>
                     <div className="d-flex justify-content-between text-center mt-5 mb-2">
                       <div>

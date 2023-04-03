@@ -39,13 +39,13 @@ export default function CarouselParties({ clubCurrent }: TPageProfilClub) {
           <Slider {...settings}>
           {clubCurrent.parties?.map(party => {
             return (
-              <div>
+              <div key={party.id}>
               <Carousel className="carousel"responsive={responsive} centerMode={true} removeArrowOnDeviceType={['tablet', 'mobile']} itemClass="carousel-item-padding-40-px">
                 <h3 className="ml-24 text-white text-2xl">La soirée: {party.name}</h3>
                 {party.pictures?.map(picture => {
                   return (
-                    <div className="">
-                      <h4>{picture.name}</h4>
+                    <div key={picture.id} className="">
+                      <h4 className='text-white'>{picture.name}</h4>
                       <img
                         className='h-[300px]'
                         onMouseEnter={() => setIsShown(false)}

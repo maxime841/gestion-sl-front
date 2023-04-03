@@ -16,8 +16,8 @@ export function CardDj() {
     <div className="grid grid-cols-4 gap-5 items-center mx-10">
       {
         djs.map(dj => (
-          <>
-            <Card className="h-fit w-full max-w-[26rem] shadow-lg px-2 bg-white">
+          <div key={dj.id} className="h-fit w-full max-w-[26rem] shadow-lg px-2 bg-white">
+            <Card>
       <CardHeader floated={false} color="blue-gray">
         <img
           className="mt-5"
@@ -42,7 +42,7 @@ export function CardDj() {
         </LinkBtn>
       </CardFooter>
     </Card>
-          </>
+          </div>
         ))}
     </div>
   )

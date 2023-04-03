@@ -7,6 +7,9 @@ import MCStream from '../../assets/picture/MC-STream-Club.png'
 import MC_Stream from '../../assets/picture/MC-STREAM.png'
 import ultimateWedding from '../../assets/picture/logo-mariage.png'
 import MPRanchEstate from '../../assets/picture/MP-Ranch-Estate.png'
+import JerseyShort from '../../assets/picture/logo-boutique-jersey-short.png'
+import blackpearl from '../../assets/picture/nouv-black-pearl.png'
+import hotelPatronna from '../../assets/picture/hotel-patro.png'
 import React from 'react'
 import '../App.css'
 
@@ -14,7 +17,7 @@ function DescriptionPage() {
   return (
     <>
     <section className="fond-palmier bg-no-repeat bg-cover h-[2600px]">
-          <h1 className="font-title  text-center text-white text-8xl mt-12 font-extrabold">The project</h1>
+          <h1 className="font-title  text-center text-white text-8xl font-extrabold pt-16">The project</h1>
           <LinkBtn addClass='mt-10 sm:ml-10 md:ml-16 lg:ml-24' children={'Site web click ici'} link={'/home'}></LinkBtn>
           <p className="text-white text-2xl font-medium mt-10 mx-8 text-center">Bienvenue sur le site web qui vous présente une association de partenariat de club, terrain de loisir et shop dans un jeu Second life. Commencons par les présenter !!!</p>
           <article className="grid sm: grid-cols-1 justify-items-center md:grid-cols-2 ml-24 mr-24 mt-16 lg:grid-cols-3 gap-x-48 gap-y-48">
@@ -72,10 +75,10 @@ function DescriptionPage() {
 
               <div className="card bg-base-100 brightness-200 image-full -rotate-[12deg] sm:w-96 md:w-72 lg:w-96">
                   <figure>
-                      <img src="" alt="Jersey pose" />
+                      <img src={JerseyShort} alt="Jersey short pose" />
                   </figure>
                   <div className="card-body">
-                      <h2 className="card-title">Jersey short pose</h2>
+                      <h2 className="card-title">Jersey Short Pose</h2>
                       <p>Un shop de poses</p>
                       <div className="card-actions justify-end">
                       <label htmlFor="my-modal-5" className="btn bg-black">Lire plus</label>
@@ -84,6 +87,19 @@ function DescriptionPage() {
               </div>
 
               <div className="card bg-base-100 brightness-200 image-full rotate-[12deg] sm:w-96 md:w-72 lg:w-96">
+                  <figure>
+                      <img src={blackpearl} alt="Presentation blackperal" />
+                  </figure>
+                  <div className="card-body">
+                      <h2 className="card-title">Blackpearl Club</h2>
+                      <p>Bienvenu au blackpearl venez vous amuser avec nos dj professionnnel</p>
+                      <div className="card-actions justify-end">
+                        <label htmlFor="my-modal-7" className="btn bg-black">Lire plus</label>
+                      </div>
+                  </div>
+              </div>
+
+              <div className="card bg-base-100 brightness-200 image-full -rotate-[12deg] sm:w-96 md:w-72 lg:w-96">
                   <figure>
                       <img src={DreamGuadeloupe} alt="Presentation dream guadeloupe" />
                   </figure>
@@ -96,67 +112,15 @@ function DescriptionPage() {
                   </div>
               </div>
 
-              <div className="card bg-base-100 brightness-200 image-full -rotate-[12deg] sm:w-96 md:w-72 lg:w-96">
-                  <figure>
-                      <img src={DreamGuadeloupe} alt="Presentation blackperal" />
-                  </figure>
-                  <div className="card-body">
-                      <h2 className="card-title">Blackpearl Club</h2>
-                      <p>Un club sous l'emprise du monde pirate.</p>
-                      <div className="card-actions justify-end">
-                        <label htmlFor="my-modal-7" className="btn bg-black">Lire plus</label>
-                      </div>
-                  </div>
-              </div>
-
               <div className="card bg-base-100 brightness-200 image-full rotate-[12deg] sm:w-96 md:w-72 lg:w-96">
                   <figure>
-                      <img src={DreamGuadeloupe} alt="Presentation hotel patronna" />
+                      <img src={hotelPatronna} alt="Presentation hotel patronna" />
                   </figure>
                   <div className="card-body">
                       <h2 className="card-title">Hotel Patronna</h2>
-                      <p>Un hotel convivial.</p>
+                      <p>Bienvenu à l'hotel patronna avec 22 chambres...</p>
                       <div className="card-actions justify-end">
                         <label htmlFor="my-modal-8" className="btn bg-black">Lire plus</label>
-                      </div>
-                  </div>
-              </div>
-
-              <div className="card bg-base-100 brightness-200 image-full -rotate-[12deg] sm:w-96 md:w-72 lg:w-96">
-                  <figure>
-                      <img src={MCStream} alt="MC Stream club" />
-                  </figure>
-                  <div className="card-body">
-                      <h2 className="card-title">MC Stream club</h2>
-                      <p>Un club MC Stream</p>
-                      <div className="card-actions justify-end">
-                      <label htmlFor="my-modal-9" className="btn bg-black">Lire plus</label>
-                      </div>
-                  </div>
-              </div>
-
-              <div className="card bg-base-100 brightness-200 image-full -rotate-[12deg] sm:w-96 md:w-72 lg:w-96">
-                  <figure>
-                      <img src={MC_Stream} alt="MC Stream" />
-                  </figure>
-                  <div className="card-body">
-                      <h2 className="card-title">MC Stream</h2>
-                      <p>Un shop qui vend des stream</p>
-                      <div className="card-actions justify-end">
-                      <label htmlFor="my-modal-10" className="btn bg-black">Lire plus</label>
-                      </div>
-                  </div>
-              </div>
-
-              <div className="card bg-base-100 brightness-200 image-full rotate-[12deg] sm:w-96 md:w-72 lg:w-96">
-                  <figure>
-                      <img src={ultimateWedding} alt="The Ultimate Wedding" />
-                  </figure>
-                  <div className="card-body">
-                      <h2 className="card-title">The Ultimate Wedding</h2>
-                      <p>Un shop qui vend tous les accessoires de mariage</p>
-                      <div className="card-actions justify-end">
-                      <label htmlFor="my-modal-11" className="btn bg-black">Lire plus</label>
                       </div>
                   </div>
               </div>
@@ -170,6 +134,45 @@ function DescriptionPage() {
                       <p>Un shop qui loue des terrains vierges</p>
                       <div className="card-actions justify-end">
                       <label htmlFor="my-modal-12" className="btn bg-black">Lire plus</label>
+                      </div>
+                  </div>
+              </div>
+
+              <div className="card bg-base-100 brightness-200 image-full rotate-[12deg] sm:w-96 md:w-72 lg:w-96">
+                  <figure>
+                      <img src={MC_Stream} alt="MC Stream" />
+                  </figure>
+                  <div className="card-body">
+                      <h2 className="card-title">MC Stream</h2>
+                      <p>Un shop qui vend des stream</p>
+                      <div className="card-actions justify-end">
+                      <label htmlFor="my-modal-10" className="btn bg-black">Lire plus</label>
+                      </div>
+                  </div>
+              </div>
+
+              <div className="card bg-base-100 brightness-200 image-full -rotate-[12deg] sm:w-96 md:w-72 lg:w-96">
+                  <figure>
+                      <img src={ultimateWedding} alt="The Ultimate Wedding" />
+                  </figure>
+                  <div className="card-body">
+                      <h2 className="card-title">The Ultimate Wedding</h2>
+                      <p>Un shop qui vend tous les accessoires de mariage</p>
+                      <div className="card-actions justify-end">
+                      <label htmlFor="my-modal-11" className="btn bg-black">Lire plus</label>
+                      </div>
+                  </div>
+              </div>
+
+              <div className="card bg-base-100 brightness-200 image-full rotate-[12deg] sm:w-96 md:w-72 lg:w-96">
+                  <figure>
+                      <img src={MCStream} alt="MC Stream club" />
+                  </figure>
+                  <div className="card-body">
+                      <h2 className="card-title">MC Stream club</h2>
+                      <p>Un club MC Stream</p>
+                      <div className="card-actions justify-end">
+                      <label htmlFor="my-modal-9" className="btn bg-black">Lire plus</label>
                       </div>
                   </div>
               </div>
@@ -240,7 +243,7 @@ function DescriptionPage() {
           <input type="checkbox" id="my-modal-5" className="modal-toggle" />
           <div className="modal modal-bottom sm:modal-middle">
               <div className="modal-box bg-black">
-              <img src="" alt="portrait shop Jersey Short Pose" />
+              <img src={JerseyShort} alt="portrait shop Jersey Short Pose" />
                   <h3 className="font-bold text-lg">Description shop Jersey Short Pose</h3>
                   <p className="py-4">Un shop de pose homme femme et couple de tout genre ainsi qu'une partie manicure avec la fabrication d'ongle de tout type de corps et style.
                  </p>
@@ -259,7 +262,7 @@ function DescriptionPage() {
                   <p className="py-4">Bienvenue à vous sur Dream Guadeloupe<br />
                     Cette île voit le jour en 2023 tenue par un projet fort et différent.<br />
                     Loin dans l'océan nous avons voyagez depuis nos débuts SL et Atlantys au départ il y a plus de 10 ans a connu un succès remarquable par sa différence. C'est en Guadeloupe que nous avons poser l'ancre.<br />
-                    Vous disposez d'un espace de divertissement accessible à tous (rezzers gratuits) :
+                    Vous disposez d'un espace de divertissement accessible à tous (rezzers gratuits) :</p>
                     <ul>
                         <li>-Surf</li>
                         <li>-Jetski, planche à voile</li>
@@ -270,6 +273,7 @@ function DescriptionPage() {
                         <li>-Warbug (petits avions maniables) mitraille par équipe ou individuel</li>
                     </ul>
                     <br />
+                    <p>
                     Plusieurs moyens de locomotions sont aussi à vôtre disposition tel que VTT, walker couple, ballons hélium, bumper aquatique.
                     La nudité est reglementée, vous disposez d'une plage naturiste, en dehors de celle ci, au minimum un paréo et poitrine couverte pour mesdames et un slip de bain pour messieurs. Les avatars enfants sont interdits. La sim est classée Adulte.
                     La chasse des vampires, le racollage ou tout autre activité liée à l'argent ne sont pas autorisés.
@@ -285,9 +289,9 @@ function DescriptionPage() {
           <input type="checkbox" id="my-modal-7" className="modal-toggle" />
           <div className="modal modal-bottom sm:modal-middle">
               <div className="modal-box bg-black">
-              <img src="" alt="portrait club Blackpearl" />
+              <img src={blackpearl} alt="portrait club Blackpearl" />
                   <h3 className="font-bold text-lg">Description club Blackpearl</h3>
-                  <p className="py-4">Un club sous l'influence pirate.....
+                  <p className="py-4">bienvenu au blackpearl venez vous amuser avec nos dj professionnnel .Ce club contient un casino strip-tease, une pool party, et une salle de bowling venez  profiter des danseuse des jeux à proposer moment  de détente.
                  </p>
                   <div className="modal-action">
                       <label htmlFor="my-modal-7" className="btn">Fermer</label>
@@ -299,10 +303,16 @@ function DescriptionPage() {
           <input type="checkbox" id="my-modal-8" className="modal-toggle" />
           <div className="modal modal-bottom sm:modal-middle">
               <div className="modal-box bg-black">
-              <img src="" alt="portrait hotel Patronna" />
+              <img src={hotelPatronna} alt="portrait hotel Patronna" />
                   <h3 className="font-bold text-lg">Description hotel Patronna</h3>
-                  <p className="py-4">Un hotel de charme........
-                 </p>
+                  <p className="py-4">bienvenu à l'hotel patronna avec 22 chambres , une plage, dj party ,venez profiter en couple pour des vacance de foli prix résonable (adulte).</p>
+                  <br /> Tarifs: <br/>
+                  <ul>
+                    <li>- 1 semaine: 320 ls </li>
+                    <li>- 2 semaines: 640 ls </li>
+                    <li>- 3 semaines: 960 ls </li>
+                    <li>- 1 mois: 1280 ls </li>
+                  </ul>
                   <div className="modal-action">
                       <label htmlFor="my-modal-8" className="btn">Fermer</label>
                   </div>

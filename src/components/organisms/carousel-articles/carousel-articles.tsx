@@ -35,18 +35,19 @@ export default function CarouselArticles({ shopCurrent }: TPageProfilShop) {
 
   return (
   <div className="flex flex-col">
-    <h2 className="ml-10 mb-10"> Les articles du shop {shopCurrent.name}</h2>
+    <h2 className="font-title text-center text-white text-8xl uppercase py-8 font-extrabold mb-10 underline"> Les articles du shop {shopCurrent.name}</h2>
           <Slider {...settings}>
           {shopCurrent.articles?.map(article => {
             return (
-              <div>
+              <div key={article.id}>
               <Carousel className="carousel"responsive={responsive} centerMode={true}>
-                <h3 className="ml-24">L'article: {article.name}</h3>
+                <h3 className="ml-24 text-white text-2xl">L'article: {article.name}</h3>
                 {article.pictures?.map(picture => {
                   return (
-                    <div>
-                      <h4>{picture.name}</h4>
+                    <div key={picture.id}>
+                      <h4 className='text-white'>{picture.name}</h4>
                       <img
+                        className='h-[300px]'
                         onMouseEnter={() => setIsShown(false)}
                         onMouseLeave={() => setIsShown(true)}
                         src={picture.picture_url}
