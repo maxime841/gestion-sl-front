@@ -1,11 +1,11 @@
-import { ICommentaire } from '@types-app/models/commentaire.model'
+import { ICommentaire, ISendCommentaireClubResponse } from '@types-app/models/commentaire.model'
 import { useEffect, useState } from 'react'
 import { CommentaireClubService } from './commentaireClub.service'
 import { CommentaireClubStore } from './commentaireClub.store'
 
 export const CommentaireClubHook = {
   /**
-   * hook for observable commentaire clubs$
+   * hook for observable commentaires club$
    */
   useCommentairesClub: () => {
     const [commentairesClub, setCommentairesClub] = useState<ICommentaire[]>([])
@@ -18,7 +18,6 @@ export const CommentaireClubHook = {
 
       getCommentairesClub()
     }, [])
-    console.log('commentaire dans hook', commentairesClub)
 
     return commentairesClub
   },
@@ -48,19 +47,19 @@ export const CommentaireClubHook = {
 
   /**
    * hook for observable send one commentaire club$
+   * @param commentaire: object commentaire
    */
-  sendCommentaireClub: () => {
-    const [commentaireClub, setCommentaireClub] = useState<ICommentaire>({})
+   sendCommentaireClub: (commentaire: any) => {
+    const [sendCommentaireClub, setSendCommentaireClub] = useState<ISendCommentaireClubResponse>({})
 
     useEffect(() => {
-      async function sendCommentaireClub() {
-        await CommentaireClubService.sendCommentaireClub()
+      async function commentaireClubSend() {
+        await CommentaireClubService.commentaireClub(commentaire)
       }
-      CommentaireClubStore.sendCommentaireClubSelected$.subscribe(value => setCommentaireClub(value))
+       CommentaireClubStore.sendCommentaireClubSelected$.subscribe(value => setSendCommentaireClub(value))
+      commentaireClubSend()
+    }, [commentaire])
 
-      sendCommentaireClub()
-    }, [])
-
-    return commentaireClub
+    return sendCommentaireClub
   },
 }

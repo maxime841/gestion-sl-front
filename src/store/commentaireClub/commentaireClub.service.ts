@@ -1,6 +1,10 @@
 import { http } from '@config-app/http/http.instance'
 import { ICommentairesClubResponse, ICommentaireClubResponse, ISendCommentaireClubResponse } from '@types-app/models/commentaire.model'
 import { CommentaireClubStore } from './commentaireClub.store'
+import { Eroute } from '@types-app/route.type'
+import { AppService } from '@store/app/app.service'
+import { userStore } from '@store/user/user.store'
+import { Eerror } from '@types-app/error.type'
 
 export const CommentaireClubService = {
   /**
@@ -8,7 +12,6 @@ export const CommentaireClubService = {
    */
   getAllCommentairesClub: async () => {
     const res = await http.get<ICommentairesClubResponse>('/commentaire') // ici on a response
-    console.log('ma res', res.data)
     CommentaireClubStore.commentairesClub$.next([...res.data.commentaires!])
   },
 
@@ -22,12 +25,22 @@ export const CommentaireClubService = {
   },
 
    /**
-   * get one commentaire club via id
-   * @param id string
+   * post one commentaire club
+   *
    */
-   sendCommentaireClub: async () => {
-    const res = await http.get<ISendCommentaireClubResponse>('/commentaire/create')
-    CommentaireClubStore.commentaireClubSelected$.next({ ...res.data.commentaire })
-  },
+   commentaireClub: async (commentaire: string) => {
+    try {
+      const res = await http.post<ISendCommentaireClubResponse>(
+        Eroute.SEND_COMMENTAIRE_CLUB, {
+         commentaire,
 
+        })
+        if (res.data.commentaire) {
+          return commentaire
+        }
+      } catch (error) {
+          AppService.errorMessage(userStore.loginError$, error, Eerror.LOGIN)
+          userStore.loginLoading$.next(false)
+        }
+    }
 }

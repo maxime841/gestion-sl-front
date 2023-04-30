@@ -1,15 +1,17 @@
+import { IPicture } from './picture.type'
+
 /**
 * type for all commentaire
 */
 export interface ICommentaire {
  id?: number
- avatar?: string
  author?: string
  title?: string
  commentaire?: string
  date_comment?: string
  created_at?: Date
  updated_at?: Date
+ picture?: IPicture
 }
 
 /**
@@ -30,5 +32,7 @@ export interface ICommentairesClubResponse {
 * type for response send one commentaire club
 */
 export interface ISendCommentaireClubResponse {
-    commentaire: ICommentaire
+    title?: string
+    commentaire?: string
+    // author?: string
    }

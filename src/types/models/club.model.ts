@@ -2,6 +2,8 @@
  import { IDj } from '@types-app/models/dj.model'
  import { IParty } from '@types-app/models/party.model'
 import { IPicture } from './picture.type'
+import { ICommentaire } from './commentaire.model'
+import { IHost } from './host.model'
 
 /**
  * type for all clubs
@@ -10,14 +12,15 @@ export interface IClub {
   id?: number
   name?: string
   owner?: string
-  created_at?: Date
-  updated_at?: Date
   presentation?: string
   picture?: IPicture
   pictures?: IPicture[]
   parties?: IParty[]
   djs?: IDj[]
   dancers?: IDancer[]
+  commentaires?: ICommentaire[]
+  created_at?: Date
+  updated_at?: Date
 }
 
 /**
@@ -32,7 +35,6 @@ export interface IClubResponse {
  */
 export interface IClubsResponse {
   clubs: IClub[]
-  parties: IClub[]
 }
 
 /**

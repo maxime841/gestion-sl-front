@@ -13,7 +13,7 @@ function ClubProfilPage() {
     <section className='fond-ecran-club bg-contain'>
       <h1 className="font-title text-center text-white py-8 text-8xl uppercase font-extrabold underline mb-16">{club.name}</h1>
       <CarouselParties clubCurrent={club} />
-      <CommentaireClub />
+      <CommentaireClub clubCurrent={club} />
     </section>
   )
 }

@@ -16,4 +16,7 @@ export enum Eroute {
     UPDATE_PROFIL = 'user/profil/update',
     DELETE_PROFIL = 'user/delete',
     UPDATE_PASSWORD = 'user/profil/update/password',
+
+    // commentaireClub
+    SEND_COMMENTAIRE_CLUB = 'commentaire/create',
   }
