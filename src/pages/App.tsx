@@ -20,6 +20,9 @@ import ShopPage from './public/shop-page'
 import ShopProfilPage from './public/shop-profil-page'
 import HobbyPage from './public/hobby-page'
 import HobbyProfilPage from './public/hobby-profil-page'
+import { LoginGuard } from '@config-app/login-guard/login-guard'
+import LoginPage from './public/login-page'
+import { DashboardPage } from './private/Dashboard-page'
 
 function App() {
   const navigate = useNavigate()
@@ -29,23 +32,25 @@ function App() {
       <Route path='/' element={<AcceuilPage />} />
       <Route path='/description' element={<DescriptionPage />} />
       <Route element={<TemplatePublic />}>
-      <Route path='/home' element={<HomePage />} />
-      <Route path='/aboutus' element={<AboutUsPage />} />
-      <Route path='/club' element={<ClubPage />} />
-      <Route path='/club/:clubId' element={<ClubProfilPage />} />
-      <Route path='/dj' element={<DjPage />} />
-      <Route path='/dj/:djId' element={<DjProfilPage />} />
-      <Route path='/host' element={<HostPage />} />
-      <Route path='/host/:hostId' element={<HostProfilPage />} />
-      <Route path='/dancer' element={<DancerPage />} />
-      <Route path='/dancer/:dancerId' element={<DancerProfilPage />} />
-      <Route path='/shop' element={<ShopPage />} />
-      <Route path='/shop/:shopId' element={<ShopProfilPage />} />
-      <Route path='/hobby' element={<HobbyPage />} />
-      <Route path='/hobby/:hobbyId' element={<HobbyProfilPage />} />
+        <Route path='/home' element={<HomePage />} />
+        <Route path='/aboutus' element={<AboutUsPage />} />
+        <Route path='/club' element={<ClubPage />} />
+        <Route path='/club/:clubId' element={<ClubProfilPage />} />
+        <Route path='/dj' element={<DjPage />} />
+        <Route path='/dj/:djId' element={<DjProfilPage />} />
+        <Route path='/host' element={<HostPage />} />
+        <Route path='/host/:hostId' element={<HostProfilPage />} />
+        <Route path='/dancer' element={<DancerPage />} />
+        <Route path='/dancer/:dancerId' element={<DancerProfilPage />} />
+        <Route path='/shop' element={<ShopPage />} />
+        <Route path='/shop/:shopId' element={<ShopProfilPage />} />
+        <Route path='/hobby' element={<HobbyPage />} />
+        <Route path='/hobby/:hobbyId' element={<HobbyProfilPage />} />
+        <Route path='/login' element={<LoginPage />} />
       </Route>
       <Route element={<AuthGuard />}>
         <Route element={<TemplatePrivate />}>
+          <Route path='/dashboard' element={<DashboardPage />} />
         </Route>
       </Route>
     </Routes>
