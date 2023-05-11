@@ -22,6 +22,9 @@ import { HobbyStore } from './hobby/hobby.store'
 import { HostHook } from './host/host.hook'
 import { HostService } from './host/host.service'
 import { HostStore } from './host/host.store'
+import { LandHook } from './land/land.hook'
+import { LandService } from './land/land.service'
+import { LandStore } from './land/land.store'
 import { MenuBurgerHook } from './menu-burger/menu-burger.hook'
 import { MenuBurgerService } from './menu-burger/menu-burger.service'
 import { MenuBurgerStore } from './menu-burger/menu-burger.store'
@@ -95,5 +98,15 @@ export const Store = {
         ...CommentaireClubStore,
         ...CommentaireClubService,
         ...CommentaireClubHook,
+      },
+      land: {
+        ...LandStore,
+        ...LandService,
+        ...LandHook
+      },
+      house: {
+        ...HostStore,
+        ...HostService,
+        ...HostHook
       },
 }

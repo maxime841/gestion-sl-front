@@ -7,6 +7,7 @@ import HostIcon from '../../atoms/icons/host-icon'
 import DancerIcon from '../../atoms/icons/dancer-icon'
 import ShopIcon from '../../atoms/icons/shop-icon'
 import LoisirIcon from '@atoms/icons/loisir-icon'
+import MenuDropdownLand from '@molecules/menu-dropdown-land/menu-dropdown-land'
 
 function MenuPrimary () {
   return (
@@ -66,6 +67,10 @@ function MenuPrimary () {
           <span className='ml-2'>Loisir</span>
         </LinkBtn>
       </li>
+      {/* dropdown land */}
+      <MenuDropdownLand addClass='mr-2 ml-2'>
+        Terrains
+      </MenuDropdownLand>
     </ul>
   )
 }

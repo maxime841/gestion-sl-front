@@ -41,3 +41,5 @@ export function ContainerPrimary({
     </section>
   )
 }
+
+export { EmodelContainer }

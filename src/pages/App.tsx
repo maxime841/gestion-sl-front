@@ -23,6 +23,15 @@ import HobbyProfilPage from './public/hobby-profil-page'
 import { LoginGuard } from '@config-app/login-guard/login-guard'
 import LoginPage from './public/login-page'
 import { DashboardPage } from './private/Dashboard-page'
+import { LandPage } from './public/land-page'
+import { ClubPageOffice } from './private/Club-page'
+import { DancerPageOffice } from './private/Dancer-page'
+import { DjPageOffice } from './private/Dj-page'
+import { HousePageOffice } from './private/House-page'
+import { LandPageOffice } from './private/Land-page'
+import { TenantPageOffice } from './private/Tenant-page'
+import { UserPageOffice } from './private/User-page'
+import ProfilPage from './private/Profil-page'
 
 function App() {
   const navigate = useNavigate()
@@ -46,11 +55,21 @@ function App() {
         <Route path='/shop/:shopId' element={<ShopProfilPage />} />
         <Route path='/hobby' element={<HobbyPage />} />
         <Route path='/hobby/:hobbyId' element={<HobbyProfilPage />} />
+        <Route path='/land' element={<LandPage />} />
+        <Route path='/land/:idLand' element={<LandPage />} />
         <Route path='/login' element={<LoginPage />} />
       </Route>
       <Route element={<AuthGuard />}>
         <Route element={<TemplatePrivate />}>
           <Route path='/dashboard' element={<DashboardPage />} />
+          <Route path='/lands' element={<LandPageOffice />} />
+          <Route path='/houses' element={<HousePageOffice />} />
+          <Route path='/tenants' element={<TenantPageOffice />} />
+          <Route path='/clubs' element={<ClubPageOffice />} />
+          <Route path='/djs' element={<DjPageOffice />} />
+          <Route path='/dancers' element={<DancerPageOffice />} />
+          <Route path='/users' element={<UserPageOffice />} />
+          <Route path='/user/profil' element={<ProfilPage />} />
         </Route>
       </Route>
     </Routes>
