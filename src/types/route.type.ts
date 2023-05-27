@@ -19,4 +19,7 @@ export enum Eroute {
 
     // commentaireClub
     SEND_COMMENTAIRE_CLUB = 'commentaire/create',
+
+    // add land
+    ADD_LAND = 'land/create',
   }

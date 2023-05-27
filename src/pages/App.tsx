@@ -32,6 +32,9 @@ import { LandPageOffice } from './private/Land-page'
 import { TenantPageOffice } from './private/Tenant-page'
 import { UserPageOffice } from './private/User-page'
 import ProfilPage from './private/Profil-page'
+import { HostPageOffice } from './private/Host-page'
+import { ShopPageOffice } from './private/Shop-page'
+import { FormAddLand } from '@molecules/forms/form-add-land'
 
 function App() {
   const navigate = useNavigate()
@@ -57,17 +60,22 @@ function App() {
         <Route path='/hobby/:hobbyId' element={<HobbyProfilPage />} />
         <Route path='/land' element={<LandPage />} />
         <Route path='/land/:idLand' element={<LandPage />} />
+        <Route element={<LoginGuard />} />
         <Route path='/login' element={<LoginPage />} />
+        <Route />
       </Route>
       <Route element={<AuthGuard />}>
         <Route element={<TemplatePrivate />}>
           <Route path='/dashboard' element={<DashboardPage />} />
           <Route path='/lands' element={<LandPageOffice />} />
+          <Route path='/form/land/create' element={<FormAddLand />} />
           <Route path='/houses' element={<HousePageOffice />} />
           <Route path='/tenants' element={<TenantPageOffice />} />
           <Route path='/clubs' element={<ClubPageOffice />} />
           <Route path='/djs' element={<DjPageOffice />} />
           <Route path='/dancers' element={<DancerPageOffice />} />
+          <Route path='/hosts' element={<HostPageOffice />} />
+          <Route path='/shops' element={<ShopPageOffice />} />
           <Route path='/users' element={<UserPageOffice />} />
           <Route path='/user/profil' element={<ProfilPage />} />
         </Route>

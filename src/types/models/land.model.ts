@@ -1,4 +1,5 @@
 import { IHouse } from './house.model'
+import { IPicture } from './picture.type'
 
 /**
  * type for all lands
@@ -14,13 +15,15 @@ export interface ILand {
   remaining_prims?: number
   date_buy?: Date
   houses?: [IHouse]
+  picture?: IPicture
+  length?: number
 }
 
 /**
  * type for response one land
  */
 export interface ILandResponse {
-  land: ILand
+  land?: ILand
 }
 
 /**
@@ -28,4 +31,8 @@ export interface ILandResponse {
  */
 export interface ILandsResponse {
   lands?: ILand[]
+}
+
+export interface IAddLandResponse {
+  addLand?: ILand
 }

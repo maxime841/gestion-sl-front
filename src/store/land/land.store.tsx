@@ -13,4 +13,10 @@ export const LandStore = {
    * @type ILand
    */
   landSelected$: new BehaviorSubject<ILand>({}),
+
+  /**
+   * add one land
+   * @type ILand
+   */
+  addLand$: new BehaviorSubject<ILand>({}),
 }
