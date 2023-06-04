@@ -1,5 +1,4 @@
 import { ContainerPrimary, EmodelContainer } from '@atoms/container/container-primary/container-primary'
-import { VoletDetailLand } from '@molecules/volet-detail-land/volet-detail-land'
 import { Store } from '@store/store'
 import React from 'react'
 import { useParams } from 'react-router-dom'
@@ -26,41 +25,7 @@ export function LandPage() {
       {/* cards house */}
       <div className='flex flex-col-reverse items-center sm:items-start sm:flex-row sm:justify-center'>
         <article className='flex flex-col w-full items-center'>
-          {land.id ? (
-            land.houses?.map(house => {
-              return (
-                <ContainerPrimary
-                  addClass='mb-12'
-                  model={EmodelContainer.club}
-                  key={house.name}>
-                  <img
-                    id={`${house.id}${house.name}`}
-                    className=' w-full rounded-tl-2xl
-                    md:rounded-tl-3xl
-                    rounded-tr-2xl
-                    md:rounded-tr-3xl'
-                    src={house.picture_favoris?.picture_url}
-                  />
 
-                  {/* presentation house */}
-                  <div className='px-2 py-4 md:px-8 md:py-8'>
-                    <h4 className='font-title font-bold text-lg md:text-2xl mb-2'>
-                      {house.name}
-                    </h4>
-                    <h4 className='font-bold text-lg md:text-2xl mb-2'>
-                      Présentation de la maison :
-                    </h4>
-                    <p className='text-base md:text-lg text-justify'>
-                      {house.presentation}
-                    </p>
-                  </div>
-                  <VoletDetailLand houseCurrent={house} />
-                </ContainerPrimary>
-              )
-            })
-          ) : (
-            <p>Loading ...</p>
-          )}
         </article>
 
         {/* Caractéristique land  */}

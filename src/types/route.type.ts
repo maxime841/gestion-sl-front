@@ -22,4 +22,37 @@ export enum Eroute {
 
     // add land
     ADD_LAND = 'land/create',
+
+    // edit land
+    UPDATE_LAND = 'land/update/',
+
+    // delete land
+    DELETE_LAND = 'land/delete/',
+
+    // add hobby
+    ADD_HOBBY = 'hobby/create',
+
+    // edit hobby
+    UPDATE_HOBBY = 'hobby/update/',
+
+    // delete hobby
+    DELETE_HOBBY = 'hobby/delete/',
+
+    // add Activity
+    ADD_ACTIVITY = 'activity/create',
+
+    // edit activity
+    UPDATE_ACTIVITY = 'activity/update/',
+
+    // delete activity
+    DELETE_ACTIVITY = 'activity/delete/',
+
+    // add club
+    ADD_CLUB = 'club/create',
+
+    // edit club
+    UPDATE_CLUB = 'club/update/',
+
+    // delete club
+    DELETE_CLUB = 'club/delete/',
   }

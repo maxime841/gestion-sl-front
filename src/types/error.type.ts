@@ -14,4 +14,5 @@ export type Terror = {
     FORGOT_PASSWORD = 'Une Erreur est survenue',
     UPDTATE_PROFIL = 'Votre profil a bien etait modifie',
     UPDATE_PASSWORD = 'Votre mot de passe a bien etait modifie',
+    UPDATE_LAND = 'Votre terrain a bien etait modifie',
   }

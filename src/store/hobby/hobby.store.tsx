@@ -13,4 +13,22 @@ export const HobbyStore = {
    * @type IHobby
    */
   hobbySelected$: new BehaviorSubject<IHobby>({}),
+
+  /**
+   * add one hobby
+   * @type IHobby
+   */
+  addHobby$: new BehaviorSubject<IHobby>({}),
+
+  /**
+   * update one hobby
+   * @type IHobby
+   */
+  updateHobby$: new BehaviorSubject<IHobby>({}),
+
+  /**
+   * delete one hobby
+   * @type IHobby
+   */
+  deleteHobby$: new BehaviorSubject<IHobby>({}),
 }

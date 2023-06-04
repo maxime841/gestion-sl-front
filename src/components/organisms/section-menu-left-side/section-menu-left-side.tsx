@@ -32,16 +32,23 @@ export function SectionMenuSideLeft() {
           </li>
           <li>
             <NavLink
-              to='/houses'
+              to='/tenants'
+              className='block py-3 pl-4 text-lg hover:bg-fond-dark-cards dark:hover:bg-fond-cards w-full'>
+              Locataires
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              to='/hobbies'
               className='block py-3 pl-4 text-lg hover:bg-fond-dark-cards dark:hover:bg-fond-cards w-full'>
               Loisirs
             </NavLink>
           </li>
           <li>
             <NavLink
-              to='/tenants'
+              to='/activities'
               className='block py-3 pl-4 text-lg hover:bg-fond-dark-cards dark:hover:bg-fond-cards w-full'>
-              Locataires
+              activitées
             </NavLink>
           </li>
         </ul>
@@ -91,6 +98,14 @@ export function SectionMenuSideLeft() {
               to='/shops'
               className='block py-3 pl-4 text-lg hover:bg-fond-dark-cards dark:hover:bg-fond-cards w-full'>
               shops
+            </NavLink>
+          </li>
+
+          <li>
+            <NavLink
+              to='/articles'
+              className='block py-3 pl-4 text-lg hover:bg-fond-dark-cards dark:hover:bg-fond-cards w-full'>
+              articles
             </NavLink>
           </li>
         </ul>

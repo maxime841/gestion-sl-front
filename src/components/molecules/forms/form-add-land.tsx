@@ -1,5 +1,6 @@
 import { Btn } from '@atoms/btns/btn'
 import { InputFull } from '@atoms/inputs/input-full'
+import LinkBtn from '@atoms/links/link-btn'
 import { Store } from '@store/store'
 import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
@@ -29,8 +30,8 @@ export function FormAddLand() {
   }
 
   return (
-    <form onSubmit={submitAddLand}>
-      <h3 className="font-bold text-lg">Ajouter votre terrain</h3>
+    <form onSubmit={submitAddLand} className='text-center w-[500px] mx-auto mt-24'>
+      <h3 className="font-bold text-lg mb-10">Ajouter votre terrain</h3>
          <div className='flex flex-col'>
          {/* input nom land */}
       <InputFull
@@ -107,14 +108,14 @@ export function FormAddLand() {
          </div>
       <div className='flex'>
          {/* btn form */}
-      <div className='mt-4 mx-4'>
-        <Btn submit>Retour</Btn>
-      </div>
+        <div className='mt-4 mx-4'>
+          <LinkBtn children={'Retour'} link={'/lands'}></LinkBtn>
+        </div>
 
          {/* btn form */}
-      <div className='mt-4'>
-        <Btn submit>Ajouter</Btn>
-      </div>
+        <div className='mt-4'>
+          <Btn submit>Ajouter</Btn>
+        </div>
       </div>
     </form>
   )

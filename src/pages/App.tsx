@@ -27,7 +27,7 @@ import { LandPage } from './public/land-page'
 import { ClubPageOffice } from './private/Club-page'
 import { DancerPageOffice } from './private/Dancer-page'
 import { DjPageOffice } from './private/Dj-page'
-import { HousePageOffice } from './private/House-page'
+import { HobbyPageOffice } from './private/Hobbies-page'
 import { LandPageOffice } from './private/Land-page'
 import { TenantPageOffice } from './private/Tenant-page'
 import { UserPageOffice } from './private/User-page'
@@ -35,6 +35,18 @@ import ProfilPage from './private/Profil-page'
 import { HostPageOffice } from './private/Host-page'
 import { ShopPageOffice } from './private/Shop-page'
 import { FormAddLand } from '@molecules/forms/form-add-land'
+import { UpdateLand } from './private/updateLand'
+import { DeleteLand } from './private/deleteLand'
+import { UpdateHobby } from './private/updateHobby'
+import { DeleteHobby } from './private/deleteHobby'
+import { FormAddHobby } from '@molecules/forms/form-add-hobby'
+import { ActivityPageOffice } from './private/activity-page'
+import { FormAddActivity } from '@molecules/forms/form-add-activity'
+import { FormUpdateActivity } from '@molecules/forms/form-update-activity'
+import { FormDeleteActivity } from '@molecules/forms/form-delete-activity'
+import { FormAddClub } from '@molecules/forms/form-add-club'
+import { FormUpdateClub } from '@molecules/forms/form-update-club'
+import { FormDeleteClub } from '@molecules/forms/form-delete-club'
 
 function App() {
   const navigate = useNavigate()
@@ -69,9 +81,21 @@ function App() {
           <Route path='/dashboard' element={<DashboardPage />} />
           <Route path='/lands' element={<LandPageOffice />} />
           <Route path='/form/land/create' element={<FormAddLand />} />
-          <Route path='/houses' element={<HousePageOffice />} />
+          <Route path='/land/:landId/form/update' element={<UpdateLand />} />
+          <Route path='/land/:landId/form/delete' element={<DeleteLand />} />
+          <Route path='/hobbies' element={<HobbyPageOffice />} />
+          <Route path='/form/hobby/create' element={<FormAddHobby />} />
+          <Route path='/hobby/:hobbyId/form/update' element={<UpdateHobby />} />
+          <Route path='/hobby/:hobbyId/form/delete' element={<DeleteHobby />} />
+          <Route path='/activities' element={<ActivityPageOffice />} />
+          <Route path='/form/activity/create' element={<FormAddActivity />} />
+          <Route path='/activity/:activityId/form/update' element={<FormUpdateActivity />} />
+          <Route path='/activity/:activityId/form/delete' element={<FormDeleteActivity />} />
           <Route path='/tenants' element={<TenantPageOffice />} />
           <Route path='/clubs' element={<ClubPageOffice />} />
+          <Route path='/form/club/create' element={<FormAddClub />} />
+          <Route path='/club/:clubId/form/update' element={<FormUpdateClub />} />
+          <Route path='/club/:clubId/form/delete' element={<FormDeleteClub />} />
           <Route path='/djs' element={<DjPageOffice />} />
           <Route path='/dancers' element={<DancerPageOffice />} />
           <Route path='/hosts' element={<HostPageOffice />} />

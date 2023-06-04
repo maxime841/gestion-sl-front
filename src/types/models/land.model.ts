@@ -1,4 +1,3 @@
-import { IHouse } from './house.model'
 import { IPicture } from './picture.type'
 
 /**
@@ -7,14 +6,21 @@ import { IPicture } from './picture.type'
 export interface ILand {
   id?: number
   name?: string
+  nameLand?: string
   owner?: string
+  ownerLand?: string
   presentation?: string
+  presentationLand?: string
   description?: string
+  descriptionLand?: string
   group?: string
+  groupLand?: string
   prims?: number
+  primsLand?: string
   remaining_prims?: number
+  remaining_primsLand?: string
   date_buy?: Date
-  houses?: [IHouse]
+  date_buyLand?: string
   picture?: IPicture
   length?: number
 }
@@ -35,4 +41,12 @@ export interface ILandsResponse {
 
 export interface IAddLandResponse {
   addLand?: ILand
+}
+
+export interface IUpdateLandResponse {
+  updateLand?: ILand
+}
+
+export interface IDeleteLandResponse {
+  deleteLand?: ILand
 }

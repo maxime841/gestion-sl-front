@@ -13,4 +13,22 @@ export const ClubStore = {
    * @type IClub
    */
   clubSelected$: new BehaviorSubject<IClub>({}),
+
+  /**
+   * add one Club
+   * @type IClub
+   */
+  addClub$: new BehaviorSubject<IClub>({}),
+
+  /**
+   * update one Club
+   * @type IClub
+   */
+  updateClub$: new BehaviorSubject<IClub>({}),
+
+  /**
+   * delete one Club
+   * @type IClub
+   */
+  deleteClub$: new BehaviorSubject<IClub>({}),
 }

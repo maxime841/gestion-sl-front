@@ -20,6 +20,7 @@ export interface IHobby {
 * type for response one hobby
 */
 export interface IHobbyResponse {
+ updateHobby: IHobby
  hobby: IHobby
 }
 
@@ -35,4 +36,16 @@ export interface IHobbiesResponse {
 */
 export type TPageProfilHobby = {
  hobbyCurrent: IHobby
+}
+
+export interface IAddHobbyResponse {
+ addHobby?: IHobby
+}
+
+export interface IUpdateHobbyResponse {
+ updateHobby?: IHobby
+}
+
+export interface IDeleteHobbyResponse {
+ deleteHobby?: IHobby
 }

@@ -1,3 +1,6 @@
+import { ActivityHook } from './activity/activity.hook'
+import { ActivityService } from './activity/activity.service'
+import { ActivityStore } from './activity/activity.store'
 import { AppHook } from './app/app.hook'
 import { AppService } from './app/app.service'
 import { AppStore } from './app/app.store'
@@ -108,5 +111,10 @@ export const Store = {
         ...HostStore,
         ...HostService,
         ...HostHook
+      },
+      activity: {
+        ...ActivityStore,
+        ...ActivityService,
+        ...ActivityHook
       },
 }

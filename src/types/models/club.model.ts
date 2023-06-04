@@ -27,6 +27,7 @@ export interface IClub {
  * type for response one club
  */
 export interface IClubResponse {
+  updateClub: IClub
   club: IClub
 }
 
@@ -42,4 +43,16 @@ export interface IClubsResponse {
  */
 export type TPageProfilClub = {
   clubCurrent: IClub
+}
+
+export interface IAddClubResponse {
+  addClub?: IClub
+}
+
+ export interface IUpdateClubResponse {
+  updateClub?: IClub
+}
+
+ export interface IDeleteClubResponse {
+  deleteClub?: IClub
 }
