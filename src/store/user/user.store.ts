@@ -3,6 +3,10 @@ import { Iuser } from '@types-app/models/user.model'
 import { BehaviorSubject } from 'rxjs'
 
 export const userStore = {
+   /**
+   * information of user connected
+   */
+   users$: new BehaviorSubject([] as Iuser[]),
   /**
    * information of user connected
    */

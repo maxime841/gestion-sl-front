@@ -5,6 +5,7 @@ import { TokenService } from '../token/token.service'
 import { Eerror } from '../../types/error.type'
 import { Ijwt } from '../../types/models/jwt.model'
 import {
+  IUsersResponse,
   Iuser,
   IuserLogout,
   IuserUpdateResponse,
@@ -15,6 +16,13 @@ import { Eroute } from '../../types/route.type'
 import { userStore } from './user.store'
 
 export const userService = {
+  /**
+   * get all users
+   */
+  getAllUsers: async () => {
+    const res = await http.get<IUsersResponse>('users') // ici on a response
+    userStore.users$.next([...res.data.users!])
+  },
   /**
    * set user connected
    * @param user Iuser

@@ -43,10 +43,21 @@ export interface IAddLandResponse {
   addLand?: ILand
 }
 
+export interface IAddPictureLandResponse {
+  addLandPicture?: IPicture
+}
+
 export interface IUpdateLandResponse {
   updateLand?: ILand
 }
 
 export interface IDeleteLandResponse {
   deleteLand?: ILand
+}
+
+/**
+ * type for get profil page dancer
+ */
+export type TPageProfilLand = {
+  landCurrent: ILand
 }

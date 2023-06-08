@@ -7,7 +7,6 @@ import '../App.css'
 function DjProfilPage() {
   const { djId } = useParams()
   const dj = Store.dj.useDj(djId!)
-  console.log('mon dj', dj)
 
   return (
     <section className='fond-ecran-dj bg-contain'>

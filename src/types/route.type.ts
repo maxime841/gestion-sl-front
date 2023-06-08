@@ -55,4 +55,58 @@ export enum Eroute {
 
     // delete club
     DELETE_CLUB = 'club/delete/',
-  }
+
+    // add dj
+    ADD_DJ = 'dj/create',
+
+    // edit dj
+    UPDATE_DJ = 'dj/update/',
+
+    // delete dj
+    DELETE_DJ = 'dj/delete/',
+
+    // add dancer
+    ADD_DANCER = 'dancer/create',
+
+    // edit dancer
+    UPDATE_DANCER = 'dancer/update/',
+
+    // delete dancer
+    DELETE_DANCER = 'dancer/delete/',
+
+    // add host
+    ADD_HOST = 'host/create',
+
+    // edit host
+    UPDATE_HOST = 'host/update/',
+
+    // delete host
+    DELETE_HOST = 'host/delete/',
+
+    // add shop
+    ADD_SHOP = 'shop/create',
+
+    // edit shop
+    UPDATE_SHOP = 'shop/update/',
+
+    // delete shop
+    DELETE_SHOP = 'shop/delete/',
+
+    // add article
+    ADD_ARTICLE = 'article/create',
+
+    // edit article
+    UPDATE_ARTICLE = 'article/update/',
+
+    // delete article
+    DELETE_ARTICLE = 'article/delete/',
+
+     // add tenant
+     ADD_TENANT = 'tenant/create',
+
+     // edit tenant
+     UPDATE_TENANT = 'tenant/update/',
+
+     // delete tenant
+     DELETE_TENANT = 'tenant/delete/',
+   }

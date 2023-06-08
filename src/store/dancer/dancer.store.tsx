@@ -13,4 +13,22 @@ export const DancerStore = {
    * @type IDancer
    */
   dancerSelected$: new BehaviorSubject<IDancer>({}),
+
+  /**
+   * add one dancer
+   * @type IDancer
+   */
+  addDancer$: new BehaviorSubject<IDancer>({}),
+
+  /**
+   * update one Dancer
+   * @type IDancer
+   */
+  updateDancer$: new BehaviorSubject<IDancer>({}),
+
+  /**
+   * delete one Dancer
+   * @type IDancer
+   */
+  deleteDancer$: new BehaviorSubject<IDancer>({}),
 }

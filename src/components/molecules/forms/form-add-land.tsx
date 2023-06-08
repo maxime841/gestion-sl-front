@@ -15,6 +15,7 @@ export function FormAddLand() {
   const [valuePrimsLand, setValuePrimsLand] = useState('')
   const [valueRemaining_primsLand, setValueRemaining_primsLand] = useState('')
   const [valueDate_buyLand, setValueDate_buyLand] = useState('')
+  const [valuePicture, setValuePictureLand] = useState('')
 
   // const loginLoader = Store.user.useLoginLoader()
   const navigate = useNavigate()
@@ -25,7 +26,7 @@ export function FormAddLand() {
    */
   const submitAddLand = async (e: React.FormEvent) => {
     e.preventDefault()
-    await Store.land.addOneLand(valueNameLand, valueOwnerLand, valuePresentationLand, valueDescriptionLand, valueGroupLand, valuePrimsLand, valueRemaining_primsLand, valueDate_buyLand)
+    await Store.land.addOneLand(valueNameLand, valueOwnerLand, valuePresentationLand, valueDescriptionLand, valueGroupLand, valuePrimsLand, valueRemaining_primsLand, valueDate_buyLand, valuePicture)
     navigate('/lands')
   }
 
@@ -105,6 +106,26 @@ export function FormAddLand() {
         addClass='mb-4'
         required
       />
+       {/* input date_buy */}
+       <InputFull
+        placeholder='Téléchargez votre photo'
+        value={valuePicture}
+        setValueInput={setValuePictureLand}
+        type='file'
+        addClass='mb-4'
+      />
+        <div className="form-control">
+  <label className="label cursor-pointer">
+    <span className="label-text">Image</span>
+    <input type="radio" name="radio-10" className="radio checked:bg-red-500" checked />
+  </label>
+</div>
+<div className="form-control">
+  <label className="label cursor-pointer">
+    <span className="label-text">Image de profil</span>
+    <input type="radio" name="radio-10" className="radio checked:bg-blue-500" checked />
+  </label>
+</div>
          </div>
       <div className='flex'>
          {/* btn form */}

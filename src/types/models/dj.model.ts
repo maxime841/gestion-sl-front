@@ -19,6 +19,7 @@ export interface IDj {
  * type for response one dj
  */
 export interface IDjResponse {
+  updateDj: any
   dj: IDj
 }
 
@@ -34,4 +35,16 @@ export interface IDjsResponse {
  */
 export type TPageProfilDj = {
   djCurrent: IDj
+}
+
+export interface IAddDjResponse {
+  addDj?: IDj
+}
+
+ export interface IUpdateDjResponse {
+  updateDj?: IDj
+}
+
+ export interface IDeleteDjResponse {
+  deleteDj?: IDj
 }

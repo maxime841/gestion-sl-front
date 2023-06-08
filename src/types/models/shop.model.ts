@@ -36,3 +36,16 @@ export interface IShopsResponse {
 export type TPageProfilShop = {
  shopCurrent: IShop
 }
+
+export interface IAddShopResponse {
+    addShop?: IShop
+  }
+
+  export interface IUpdateShopResponse {
+    deleteShop: IShop
+    updateShop?: IShop
+  }
+
+  export interface IDeleteShopResponse {
+    deleteShop?: IShop
+  }

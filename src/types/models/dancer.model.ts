@@ -18,6 +18,7 @@ export interface IDancer {
  * type for response one dancer
  */
 export interface IDancerResponse {
+  updateDancer: IDancer
   dancer: IDancer
 }
 
@@ -33,4 +34,16 @@ export interface IDancersResponse {
  */
 export type TPageProfilDancer = {
   dancerCurrent: IDancer
+}
+
+export interface IAddDancerResponse {
+  addDancer?: IDancer
+}
+
+ export interface IUpdateDancerResponse {
+  updateDancer?: IDancer
+}
+
+ export interface IDeleteDancerResponse {
+  deleteDancer?: IDancer
 }

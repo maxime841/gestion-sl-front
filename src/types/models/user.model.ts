@@ -8,6 +8,7 @@ export interface Iuser {
   id?: number
   name?: string
   email?: string
+  avatar?: string
   picture?: IPicture
   email_verified_at?: string
   role?: Irole
@@ -44,4 +45,11 @@ export type TresetPassword = {
  export type TupdatePasswordResponse = {
   current_password: any
   password: any
+}
+
+/**
+ * type for response update Password
+ */
+export type IUsersResponse = {
+  users: Iuser[]
 }

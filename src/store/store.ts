@@ -4,6 +4,9 @@ import { ActivityStore } from './activity/activity.store'
 import { AppHook } from './app/app.hook'
 import { AppService } from './app/app.service'
 import { AppStore } from './app/app.store'
+import { ArticleHook } from './article/article.hook'
+import { ArticleService } from './article/article.service'
+import { ArticleStore } from './article/article.store'
 import { ClubHook } from './club/club.hook'
 import { ClubService } from './club/club.service'
 import { ClubStore } from './club/club.store'
@@ -34,6 +37,9 @@ import { MenuBurgerStore } from './menu-burger/menu-burger.store'
 import { ShopHook } from './shop/shop.hook'
 import { ShopService } from './shop/shop.service'
 import { ShopStore } from './shop/shop.store'
+import { TenantHook } from './tenant/tenant.hook'
+import { TenantService } from './tenant/tenant.service'
+import { TenantStore } from './tenant/tenant.store'
 import { TokenHook } from './token/token.hook'
 import { TokenService } from './token/token.service'
 import { TokenStore } from './token/token.store'
@@ -116,5 +122,15 @@ export const Store = {
         ...ActivityStore,
         ...ActivityService,
         ...ActivityHook
+      },
+      article: {
+        ...ArticleStore,
+        ...ArticleService,
+        ...ArticleHook
+      },
+      tenant: {
+        ...TenantStore,
+        ...TenantService,
+        ...TenantHook
       },
 }

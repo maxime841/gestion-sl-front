@@ -214,4 +214,22 @@ export const userHook = {
 
     return { error, current_password, password, passwordConfirme }
   },
+
+  /**
+   * hook for observable user$
+   */
+  useUsers: () => {
+    const [users, setUsers] = useState<Iuser[]>([])
+
+    useEffect(() => {
+      async function getUsers() {
+        await userService.getAllUsers()
+      }
+      userStore.users$.subscribe(value => setUsers(value))
+
+      getUsers()
+    }, [])
+
+    return users
+  },
 }

@@ -13,4 +13,22 @@ export const HostStore = {
    * @type IHost
    */
   hostSelected$: new BehaviorSubject<IHost>({}),
+
+  /**
+   * add one Host
+   * @type IHost
+   */
+  addHost$: new BehaviorSubject<IHost>({}),
+
+  /**
+   * update one Host
+   * @type IHost
+   */
+  updateHost$: new BehaviorSubject<IHost>({}),
+
+  /**
+   * delete one Host
+   * @type IHost
+   */
+  deleteHost$: new BehaviorSubject<IHost>({}),
 }

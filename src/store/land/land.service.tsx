@@ -35,8 +35,9 @@ export const LandService = {
    * @param prims string
    * @param remaining_prims string
    * @param date_buy string
+   * @param pictureFavori string
    */
-  addOneLand: async (name: string, owner: string, presentation: string, description: string, group: string, prims: string, remaining_prims: string, date_buy: string) => {
+  addOneLand: async (name: string, owner: string, presentation: string, description: string, group: string, prims: string, remaining_prims: string, date_buy: string, picture: string) => {
       // add land
     const res = await http.post<IAddLandResponse>(`${Eroute.ADD_LAND}`, {
       name,
@@ -46,9 +47,9 @@ export const LandService = {
       group,
       prims,
       remaining_prims,
-      date_buy
+      date_buy,
+      picture
     })
-    LandStore.addLand$.next({ ...res.data.addLand })
   },
 
   /**

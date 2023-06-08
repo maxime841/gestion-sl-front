@@ -13,4 +13,22 @@ export const DjStore = {
    * @type IDj
    */
   djSelected$: new BehaviorSubject<IDj>({}),
+
+  /**
+   * add one dj
+   * @type IDj
+   */
+  addDj$: new BehaviorSubject<IDj>({}),
+
+  /**
+   * update one dj
+   * @type IDj
+   */
+  updateDj$: new BehaviorSubject<IDj>({}),
+
+  /**
+   * delete one dj
+   * @type IDj
+   */
+  deleteDj$: new BehaviorSubject<IDj>({}),
 }
