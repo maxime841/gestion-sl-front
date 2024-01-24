@@ -26,7 +26,7 @@ export const CommentaireClubHook = {
    * hook for observable commentaireclubSelected$
    * @param id: string
    */
-  useCommentaireClub: (id: string) => {
+  useCommentaireClub: (id: any) => {
     const [commentaireClub, setCommentaireClub] = useState<ICommentaire>({})
 
     useEffect(() => {
@@ -49,16 +49,16 @@ export const CommentaireClubHook = {
    * hook for observable send one commentaire club$
    * @param commentaire: object commentaire
    */
-   sendCommentaireClub: (commentaire: any) => {
+   sendCommentaireClub: (title: any, commentaire: any, id: any) => {
     const [sendCommentaireClub, setSendCommentaireClub] = useState<ISendCommentaireClubResponse>({})
 
     useEffect(() => {
       async function commentaireClubSend() {
-        await CommentaireClubService.commentaireClub(commentaire)
+        await CommentaireClubService.commentaireClub(title, commentaire, id)
       }
        CommentaireClubStore.sendCommentaireClubSelected$.subscribe(value => setSendCommentaireClub(value))
       commentaireClubSend()
-    }, [commentaire])
+    }, [title, commentaire, id])
 
     return sendCommentaireClub
   },

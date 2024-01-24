@@ -11,7 +11,7 @@ export const CommentaireClubService = {
    * get all comments clubs
    */
   getAllCommentairesClub: async () => {
-    const res = await http.get<ICommentairesClubResponse>('/commentaire') // ici on a response
+    const res = await http.get<ICommentairesClubResponse>('/commentaireClub') // ici on a response
     CommentaireClubStore.commentairesClub$.next([...res.data.commentaires!])
   },
 
@@ -20,7 +20,7 @@ export const CommentaireClubService = {
    * @param id string
    */
   getCommentaireClub: async (id: string) => {
-    const res = await http.get<ICommentaireClubResponse>(`/commentaire/${id}`)
+    const res = await http.get<ICommentaireClubResponse>(`/commentaireClub${id}`)
     CommentaireClubStore.commentaireClubSelected$.next({ ...res.data.comment })
   },
 
@@ -28,12 +28,13 @@ export const CommentaireClubService = {
    * post one commentaire club
    *
    */
-   commentaireClub: async (commentaire: string) => {
+   commentaireClub: async (title: string, commentaire: string, id: any) => {
     try {
       const res = await http.post<ISendCommentaireClubResponse>(
-        Eroute.SEND_COMMENTAIRE_CLUB, {
+        `${Eroute.SEND_COMMENTAIRE_CLUB}`, {
+          title,
          commentaire,
-
+         id
         })
         if (res.data.commentaire) {
           return commentaire

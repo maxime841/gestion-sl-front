@@ -11,7 +11,7 @@ export const HobbyService = {
    * get all hobbies
    */
   getAllHobbies: async () => {
-    const res = await http.get<IHobbiesResponse>('/hobby') // ici on a response
+    const res = await http.get<IHobbiesResponse>('/hobbies') // ici on a response
     HobbyStore.hobbies$.next([...res.data.hobbies!])
   },
 

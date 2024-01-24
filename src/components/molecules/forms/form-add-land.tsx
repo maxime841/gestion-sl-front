@@ -1,4 +1,5 @@
 import { Btn } from '@atoms/btns/btn'
+import { PencilIcon } from '@atoms/icons/pencil-icon'
 import { InputFull } from '@atoms/inputs/input-full'
 import LinkBtn from '@atoms/links/link-btn'
 import { Store } from '@store/store'
@@ -28,6 +29,13 @@ export function FormAddLand() {
     e.preventDefault()
     await Store.land.addOneLand(valueNameLand, valueOwnerLand, valuePresentationLand, valueDescriptionLand, valueGroupLand, valuePrimsLand, valueRemaining_primsLand, valueDate_buyLand, valuePicture)
     navigate('/lands')
+  }
+
+  const handlerOnSub = async (e: any) => {
+    e.preventDefault()
+    const formData = new FormData()
+    formData.append('avatar', e.target.files[0])
+    await Store.user.updatePicture(formData)
   }
 
   return (
@@ -106,26 +114,13 @@ export function FormAddLand() {
         addClass='mb-4'
         required
       />
-       {/* input date_buy */}
-       <InputFull
-        placeholder='Téléchargez votre photo'
-        value={valuePicture}
-        setValueInput={setValuePictureLand}
-        type='file'
-        addClass='mb-4'
-      />
-        <div className="form-control">
-  <label className="label cursor-pointer">
-    <span className="label-text">Image</span>
-    <input type="radio" name="radio-10" className="radio checked:bg-red-500" checked />
-  </label>
-</div>
-<div className="form-control">
-  <label className="label cursor-pointer">
-    <span className="label-text">Image de profil</span>
-    <input type="radio" name="radio-10" className="radio checked:bg-blue-500" checked />
-  </label>
-</div>
+      {/* input upload picture land */}
+      <InputFull
+         placeholder='Teléchargez votre image du terrain'
+         type='file'
+         addClass='mb-4'
+         onChange={handlerOnSub}
+        />
          </div>
       <div className='flex'>
          {/* btn form */}

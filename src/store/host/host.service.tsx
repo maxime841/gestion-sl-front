@@ -11,7 +11,7 @@ export const HostService = {
    * get all host
    */
   getAllHosts: async () => {
-    const res = await http.get<IHostsResponse>('/host') // ici on a response
+    const res = await http.get<IHostsResponse>('/hosts') // ici on a response
     HostStore.hosts$.next([...res.data.hosts!])
   },
 

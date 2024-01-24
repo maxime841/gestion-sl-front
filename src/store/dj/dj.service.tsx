@@ -11,7 +11,7 @@ export const DjService = {
    * get all club
    */
   getAllDjs: async () => {
-    const res = await http.get<IDjsResponse>('/dj') // ici on a response
+    const res = await http.get<IDjsResponse>('/djs') // ici on a response
     DjStore.djs$.next([...res.data.djs!])
   },
 

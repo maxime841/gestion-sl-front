@@ -23,7 +23,6 @@ import HobbyProfilPage from './public/hobby-profil-page'
 import { LoginGuard } from '@config-app/login-guard/login-guard'
 import LoginPage from './public/login-page'
 import { DashboardPage } from './private/Dashboard-page'
-import { LandPage } from './public/land-page'
 import { ClubPageOffice } from './private/Club-page'
 import { DancerPageOffice } from './private/Dancer-page'
 import { DjPageOffice } from './private/Dj-page'
@@ -87,7 +86,6 @@ function App() {
         <Route path='/shop/:shopId' element={<ShopProfilPage />} />
         <Route path='/hobby' element={<HobbyPage />} />
         <Route path='/hobby/:hobbyId' element={<HobbyProfilPage />} />
-        <Route path='/land' element={<LandPage />} />
         <Route path='/land/:landId' element={<LandProfilPage />} />
         <Route element={<LoginGuard />} />
         <Route path='/login' element={<LoginPage />} />

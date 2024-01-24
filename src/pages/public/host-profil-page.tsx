@@ -9,7 +9,7 @@ function HostProfilPage() {
   const host = Store.host.useHost(hostId!)
 
   return (
-    <section className='fond-ecran-host bg-contain'>
+    <section /* className='fond-ecran-host bg-contain' */>
       <h1 className="font-title text-center py-8 text-white text-8xl uppercase font-extrabold underline">{host.name}</h1>
       <SectionPageProfilHost hostCurrent={host} />
     </section>

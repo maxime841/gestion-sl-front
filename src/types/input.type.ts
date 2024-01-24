@@ -7,11 +7,11 @@ export type TInput = {
     id?: string
     name?: string
     type?: string
-    value: string | undefined
+    value?: string | undefined
     disabled?: boolean
     placeholder: string
     required?: boolean
-    setValueInput: any
+    setValueInput?: any
     classDefault?: string
     addClass?: string
     colors?: string
@@ -28,4 +28,5 @@ export type TInput = {
     activeReset?: boolean
     eye?: boolean
     icon?: JSX.Element | JSX.Element[]
+    onChange?: any
   }

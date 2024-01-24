@@ -11,7 +11,7 @@ export const ShopService = {
    * get all shops
    */
   getAllShops: async () => {
-    const res = await http.get<IShopsResponse>('/shop') // ici on a response
+    const res = await http.get<IShopsResponse>('/shops') // ici on a response
     ShopStore.shops$.next([...res.data.shops!])
   },
 

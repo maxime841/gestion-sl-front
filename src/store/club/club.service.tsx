@@ -11,7 +11,7 @@ export const ClubService = {
    * get all clubs
    */
   getAllClubs: async () => {
-    const res = await http.get<IClubsResponse>('/club') // ici on a response
+    const res = await http.get<IClubsResponse>('/clubs') // ici on a response
     ClubStore.clubs$.next([...res.data.clubs!])
   },
 

@@ -11,7 +11,7 @@ export const ArticleService = {
    * get all Articles
    */
   getAllArticles: async () => {
-    const res = await http.get<IArticle>('/article') // ici on a response
+    const res = await http.get<IArticle>('/articles') // ici on a response
     ArticleStore.articles$.next([...res.data.articles!])
   },
 

@@ -11,7 +11,7 @@ export const DancerService = {
    * get all dancer
    */
   getAllDancers: async () => {
-    const res = await http.get<IDancersResponse>('/dancer') // ici on a response
+    const res = await http.get<IDancersResponse>('/dancers') // ici on a response
     DancerStore.dancers$.next([...res.data.dancers!])
   },
 

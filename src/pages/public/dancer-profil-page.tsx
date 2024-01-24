@@ -9,7 +9,7 @@ function DancerProfilPage() {
   const dancer = Store.dancer.useDancer(dancerId!)
 
   return (
-    <section className='fond-ecran-dancer bg-contain'>
+    <section /* className='fond-ecran-dancer bg-contain' */>
       <h1 className="font-title text-center text-white text-8xl uppercase py-8 font-extrabold mb-16 underline">{dancer.name}</h1>
       <SectionPageProfilDancer dancerCurrent={dancer} />
     </section>

@@ -1,28 +1,55 @@
+import { InputFull } from '@atoms/inputs/input-full'
 import { Store } from '@store/store'
-import React from 'react'
+import React, { useState } from 'react'
+import { useParams } from 'react-router-dom'
 
 export function FormCommentaireClub() {
-  const submitCommentClub = async (e: any) => {
-        e.preventDefault()
-        const form: any = document.forms.namedItem('commentClub')
-        const formData = new FormData(form)
-        console.log('mon form', formData)
-        await Store.commentaireClub.sendCommentaireClub(formData)
-      }
+  const { clubId } = useParams()
+
+  console.log('mon id club: ', clubId)
+
+  const club = Store.club.useClub(clubId!)
+  console.log('mon club', club)
+
+  const [valueTitleComment, setValueTitleComment] = useState('')
+  const [valueCommentaireComment, setValueCommentaireComment] = useState('')
+  const [valueIdClub, setValueIdClub] = useState('')
+
+   /**
+   * add comment club
+   * @param e React.FormEvent
+   */
+   const submitCommentClub = async (e: React.FormEvent) => {
+    e.preventDefault()
+    await Store.commentaireClub.commentaireClub(valueTitleComment, valueCommentaireComment, clubId)
+    // window.location.reload()
+  }
   return (
-    <form encType="multipart/form-data" method='post' name='commentClub' className='flex flex-col my-10 items-center'>
-      <input type='text' placeholder='Votre titre' name='titre_comment' className='text-white mb-4'/>
+    <form encType="multipart/form-data" method='post' name='commentClub' action="/api/commentaire/add" className='flex flex-col my-10 items-center'>
+      <InputFull
+        placeholder='Titre du commentaire'
+        name='titleCommentClub'
+        value={valueTitleComment}
+        setValueInput={setValueTitleComment}
+        type='text'
+        addClass='mb-4'
+        required />
       {/* textArea commentaire */}
-      <textarea placeholder='Rentrer votre commentaire ici' name='comment' className='p-2 rounded-2xl w-[600px] bg-green-100' cols={30} rows={3}>
-      </textarea>
-         {/* btn sub */}
-        <input
+      <InputFull
+        placeholder='Tapez votre commentaire'
+        name='commentaireCommentClub'
+        value={valueCommentaireComment}
+        setValueInput={setValueCommentaireComment}
+        type='text'
+        addClass='mb-4'
+        required />
+      <InputFull type="hidden" name="club_id" value={valueIdClub} setValueInput={setValueIdClub} placeholder={''} />
+      {/* btn sub */}
+      <input
         className='rounded-lg bg-green-100 mt-5 p-4'
-          type='submit'
-          value='Commenter'
-          onClick={submitCommentClub}
-          // required
-        />
+        type='submit'
+        value='Commenter'
+        onClick={submitCommentClub} />
     </form>
   )
 }

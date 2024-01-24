@@ -11,7 +11,7 @@ export const ActivityService = {
    * get all activities
    */
   getAllActivities: async () => {
-    const res = await http.get<IActivity>('/activity') // ici on a response
+    const res = await http.get<IActivity>('/activities') // ici on a response
     ActivityStore.activities$.next([...res.data.activities!])
   },
 

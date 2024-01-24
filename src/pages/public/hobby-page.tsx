@@ -4,7 +4,7 @@ import '../App.css'
 
 function HobbyPage() {
   return (
-    <section className='fond-ecran-hobby bg-cover'>
+    <section /* className='fond-ecran-hobby bg-cover' */>
      <SectionListHobby />
     </section>
   )

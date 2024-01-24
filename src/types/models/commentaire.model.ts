@@ -1,4 +1,5 @@
 import { IPicture } from './picture.type'
+import { Iuser } from './user.model'
 
 /**
 * type for all commentaire
@@ -12,6 +13,7 @@ export interface ICommentaire {
  created_at?: Date
  updated_at?: Date
  picture?: IPicture
+ user?: Iuser
 }
 
 /**
@@ -35,4 +37,4 @@ export interface ISendCommentaireClubResponse {
     title?: string
     commentaire?: string
     // author?: string
-   }
+}

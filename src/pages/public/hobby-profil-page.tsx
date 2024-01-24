@@ -9,7 +9,7 @@ function HobbyProfilPage() {
   const hobby = Store.hobby.useHobby(hobbyId!)
 
   return (
-    <section className='fond-ecran-hobby bg-contain'>
+    <section /* className='fond-ecran-hobby bg-contain' */>
       <h1 className="font-title text-center text-white text-8xl uppercase py-8 font-extrabold mb-10 underline">{hobby.name}</h1>
       <CarouselActivities hobbyCurrent={hobby} />
     </section>
