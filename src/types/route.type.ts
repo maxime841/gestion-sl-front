@@ -18,7 +18,13 @@ export enum Eroute {
     UPDATE_PASSWORD = 'user/profil/update/password',
 
     // commentaireClub
-    SEND_COMMENTAIRE_CLUB = '/commentaireClub/add',
+    SEND_COMMENTAIRE_CLUB = '/club/id/comment',
+
+    // commentaireDj
+    SEND_COMMENTAIRE_DJ = '/dj/id/comment',
+
+     // commentaireHost
+     SEND_COMMENTAIRE_HOST = '/host/id/comment',
 
     // add land
     ADD_LAND = 'land/create',

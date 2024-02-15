@@ -1,3 +1,4 @@
+import { ICommentaire } from './commentaire.model'
 import { IPicture } from './picture.type'
 
 /**
@@ -11,6 +12,7 @@ export interface IHost {
     presentation?: string
     picture?: IPicture
     pictures?: IPicture[]
+    commentaires?: ICommentaire[]
     date_entrance?: Date
   }
 

@@ -17,9 +17,9 @@ function DescriptionPage() {
   return (
     <>
     <section className="fond-palmier bg-no-repeat bg-cover h-[2600px]">
-          <h1 className="font-title  text-center text-white text-8xl font-extrabold pt-16">The project</h1>
+          <h1 className="font-title  text-center text-white text-8xl font-extrabold pt-16">Aoks City</h1>
           <LinkBtn addClass='mt-10 sm:ml-10 md:ml-16 lg:ml-24' children={'Site web click ici'} link={'/home'}></LinkBtn>
-          <p className="text-white text-2xl font-medium mt-10 mx-8 text-center">Bienvenue sur le site web qui vous présente une association de partenariat de club, terrain de loisir et shop dans un jeu Second life. Commencons par les présenter !!!</p>
+          <p className="text-white text-2xl font-medium mt-10 mx-8 text-center mb-36">Bienvenu sur le site d'un petit groupe de créatrice française qui ouvrent leur shop. Certaines d'entre elles ont aussi un club pour vous divertir, venez visitez ce site pour venir decouvrir leur univers diverse tel que l'afrique, les antilles, n'attendons pas plus venez les découvrir !!!</p>
           <article className="grid sm: grid-cols-1 justify-items-center md:grid-cols-2 ml-24 mr-24 mt-16 lg:grid-cols-3 gap-x-48 gap-y-48">
               <div className="card bg-base-100 brightness-200 image-full -rotate-[12deg] sm:w-96 md:w-72 lg:w-96">
                   <figure>
@@ -95,84 +95,6 @@ function DescriptionPage() {
                       <p>Bienvenu au blackpearl venez vous amuser avec nos dj professionnnel</p>
                       <div className="card-actions justify-end">
                         <label htmlFor="my-modal-7" className="btn bg-black">Lire plus</label>
-                      </div>
-                  </div>
-              </div>
-
-              <div className="card bg-base-100 brightness-200 image-full -rotate-[12deg] sm:w-96 md:w-72 lg:w-96">
-                  <figure>
-                      <img src={DreamGuadeloupe} alt="Presentation dream guadeloupe" />
-                  </figure>
-                  <div className="card-body">
-                      <h2 className="card-title">Dream guadeloupe</h2>
-                      <p>Une sim de loisir.</p>
-                      <div className="card-actions justify-end">
-                      <label htmlFor="my-modal-6" className="btn bg-black">Lire plus</label>
-                      </div>
-                  </div>
-              </div>
-
-              <div className="card bg-base-100 brightness-200 image-full rotate-[12deg] sm:w-96 md:w-72 lg:w-96">
-                  <figure>
-                      <img src={hotelPatronna} alt="Presentation hotel patronna" />
-                  </figure>
-                  <div className="card-body">
-                      <h2 className="card-title">Hotel Patronna</h2>
-                      <p>Bienvenu à l'hotel patronna avec 22 chambres...</p>
-                      <div className="card-actions justify-end">
-                        <label htmlFor="my-modal-8" className="btn bg-black">Lire plus</label>
-                      </div>
-                  </div>
-              </div>
-
-              <div className="card bg-base-100 brightness-200 image-full -rotate-[12deg] sm:w-96 md:w-72 lg:w-96">
-                  <figure>
-                      <img src={MPRanchEstate} alt="MP Ranch Estate" />
-                  </figure>
-                  <div className="card-body">
-                      <h2 className="card-title">MP Ranch Estate</h2>
-                      <p>Un shop qui loue des terrains vierges</p>
-                      <div className="card-actions justify-end">
-                      <label htmlFor="my-modal-12" className="btn bg-black">Lire plus</label>
-                      </div>
-                  </div>
-              </div>
-
-              <div className="card bg-base-100 brightness-200 image-full rotate-[12deg] sm:w-96 md:w-72 lg:w-96">
-                  <figure>
-                      <img src={MC_Stream} alt="MC Stream" />
-                  </figure>
-                  <div className="card-body">
-                      <h2 className="card-title">MC Stream</h2>
-                      <p>Un shop qui vend des stream</p>
-                      <div className="card-actions justify-end">
-                      <label htmlFor="my-modal-10" className="btn bg-black">Lire plus</label>
-                      </div>
-                  </div>
-              </div>
-
-              <div className="card bg-base-100 brightness-200 image-full -rotate-[12deg] sm:w-96 md:w-72 lg:w-96">
-                  <figure>
-                      <img src={ultimateWedding} alt="The Ultimate Wedding" />
-                  </figure>
-                  <div className="card-body">
-                      <h2 className="card-title">The Ultimate Wedding</h2>
-                      <p>Un shop qui vend tous les accessoires de mariage</p>
-                      <div className="card-actions justify-end">
-                      <label htmlFor="my-modal-11" className="btn bg-black">Lire plus</label>
-                      </div>
-                  </div>
-              </div>
-
-              <div className="card bg-base-100 brightness-200 image-full rotate-[12deg] sm:w-96 md:w-72 lg:w-96">
-                  <figure>
-                      <img src={MCStream} alt="MC Stream club" />
-                  </figure>
-                  <div className="card-body">
-                      <h2 className="card-title">MC Stream club</h2>
-                      <p>Un club MC Stream</p>
-                      <div className="card-actions justify-end">
-                      <label htmlFor="my-modal-9" className="btn bg-black">Lire plus</label>
                       </div>
                   </div>
               </div>

@@ -3,6 +3,7 @@ import { Store } from '@store/store'
 import React from 'react'
 import { useParams } from 'react-router-dom'
 import '../App.css'
+import { CommentaireHost } from '@organisms/commentaireHost/commentaire-host'
 
 function HostProfilPage() {
   const { hostId } = useParams()
@@ -12,6 +13,7 @@ function HostProfilPage() {
     <section /* className='fond-ecran-host bg-contain' */>
       <h1 className="font-title text-center py-8 text-white text-8xl uppercase font-extrabold underline">{host.name}</h1>
       <SectionPageProfilHost hostCurrent={host} />
+      <CommentaireHost hostCurrent={host} />
     </section>
   )
 }

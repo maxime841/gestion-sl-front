@@ -1,5 +1,4 @@
 import { BehaviorSubject } from 'rxjs'
-import { IClub } from '@types-app/models/club.model'
 import { ICommentaire } from '@types-app/models/commentaire.model'
 
 export const CommentaireClubStore = {

@@ -3,6 +3,7 @@ import { Store } from '@store/store'
 import React from 'react'
 import { useParams } from 'react-router-dom'
 import '../App.css'
+import { CommentaireDj } from '@organisms/commentaireDj/commentaire-dj'
 
 function DjProfilPage() {
   const { djId } = useParams()
@@ -12,6 +13,7 @@ function DjProfilPage() {
     <section /* className='fond-ecran-dj bg-contain' */>
       <h1 className="font-title text-center text-white text-8xl uppercase py-8 font-extrabold mb-10 underline">{dj.name}</h1>
       <SectionPageProfilDj djCurrent={dj} />
+      <CommentaireDj djCurrent={dj} />
     </section>
   )
 }

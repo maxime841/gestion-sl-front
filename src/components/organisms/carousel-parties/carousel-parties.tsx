@@ -34,8 +34,8 @@ export default function CarouselParties({ clubCurrent }: TPageProfilClub) {
   }
 
   return (
-  <div className="flex flex-col">
-    <h2 className="ml-10 mb-10 border-1 bg-green-100 p-4 text-2xl w-fit"> Les soirées du club {clubCurrent.name}</h2>
+  <div className="flex flex-col mx-24">
+    <h2 className="ml-10 mb-10 border-1 bg-green-100 p-4 text-2xl w-fit rounded-lg"> Les soirées du club {clubCurrent.name}</h2>
           <Slider {...settings}>
           {clubCurrent.parties?.map(party => {
             return (
@@ -44,10 +44,10 @@ export default function CarouselParties({ clubCurrent }: TPageProfilClub) {
                 <h3 className="ml-24 text-white text-2xl">La soirée: {party.name}</h3>
                 {party.pictures?.map(picture => {
                   return (
-                    <div key={picture.id} className="">
+                    <div key={picture.id} className="mx-8">
                       <h4 className='text-white'>{picture.name}</h4>
                       <img
-                        className='h-[300px]'
+                        className='h-[300px] rounded-2xl'
                         onMouseEnter={() => setIsShown(false)}
                         onMouseLeave={() => setIsShown(true)}
                         src={picture.picture_url}

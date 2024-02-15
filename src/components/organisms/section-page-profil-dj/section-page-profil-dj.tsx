@@ -4,8 +4,6 @@ import React from 'react'
 import 'react-multi-carousel/lib/styles.css'
 
 export default function SectionPageProfilDj({ djCurrent }: TPageProfilDj) {
-  console.log('mon dj', djCurrent)
-
   return (
   <div className="flex justify-center py-10">
     <div className='border-4 w-[1200px] p-16 mt-10 rounded-xl flex bg-green-100 opacity-50'>

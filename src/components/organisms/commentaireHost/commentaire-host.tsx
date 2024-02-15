@@ -1,21 +1,21 @@
 import Title from '@atoms/title/title'
-import { FormCommentaireClub } from '@molecules/forms/formCommentaireClub'
+import { FormCommentaireHost } from '@molecules/forms/formCommentaireHost'
 import userCommun from '../../../assets/picture/user.png'
 import React from 'react'
-import { TPageProfilClub } from '@types-app/models/club.model'
+import { TPageProfilHost } from '@types-app/models/host.model'
 import { Store } from '@store/store'
 import { useParams } from 'react-router-dom'
 
-export function CommentaireClub({ clubCurrent }: TPageProfilClub) {
-  const { clubId } = useParams()
+export function CommentaireHost({ hostCurrent }: TPageProfilHost) {
+  const { hostId } = useParams()
 
-  const club = Store.club.useClub(clubId!)
+  const host = Store.host.useHost(hostId!)
 
   return (
     <section>
-    <Title addClass='font-title text-center text-white text-4xl uppercase mt-12 font-extrabold mb-5 underline'>Commentaire du club</Title>
+    <Title addClass='font-title text-center text-white text-4xl uppercase mt-12 font-extrabold mb-5 underline'>Commentaire du host</Title>
     <article className='border-4 mx-10 rounded-[36px]'>
-      {clubCurrent?.commentaires?.map(comment => {
+      {hostCurrent?.commentaires?.map(comment => {
         return (
           <article key={comment.id} className='text-white w-fit border-2 p-6 rounded-[36px] m-5'>
             <h3 className='ml-5 font-semibold mb-5'>Titre: {comment.title}</h3>
@@ -32,9 +32,9 @@ export function CommentaireClub({ clubCurrent }: TPageProfilClub) {
           </article>
         )
       })}
-      <p className='text-white text-center mt-10'>Venez rajoutez votre propre commentaire pour que le propriétaire du club lise vos critiques constructives ou vos bonne impressions, cela lui fera plaisir et ainsi voir si des améliorations possibles seront à faire
+      <p className='text-white text-center mt-10'>Venez rajoutez votre propre commentaire pour que le host lise vos critiques constructives ou vos bonne impressions, cela lui fera plaisir et ainsi voir si des améliorations possibles seront à faire
       </p>
-      <FormCommentaireClub clubCurrent={club}/>
+      <FormCommentaireHost hostCurrent={host}/>
     </article>
     </section>
   )

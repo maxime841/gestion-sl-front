@@ -4,6 +4,7 @@ import { CommentaireClubService } from './commentaireClub.service'
 import { CommentaireClubStore } from './commentaireClub.store'
 
 export const CommentaireClubHook = {
+
   /**
    * hook for observable commentaires club$
    */
@@ -49,16 +50,16 @@ export const CommentaireClubHook = {
    * hook for observable send one commentaire club$
    * @param commentaire: object commentaire
    */
-   sendCommentaireClub: (title: any, commentaire: any, id: any) => {
+   sendCommentaireClub: (title: any, content: any, id: any) => {
     const [sendCommentaireClub, setSendCommentaireClub] = useState<ISendCommentaireClubResponse>({})
 
     useEffect(() => {
       async function commentaireClubSend() {
-        await CommentaireClubService.commentaireClub(title, commentaire, id)
+        await CommentaireClubService.commentaireClub(title, content, id)
       }
        CommentaireClubStore.sendCommentaireClubSelected$.subscribe(value => setSendCommentaireClub(value))
       commentaireClubSend()
-    }, [title, commentaire, id])
+    }, [title, content, id])
 
     return sendCommentaireClub
   },

@@ -1,3 +1,6 @@
+import { CommentaireDjHook } from './CommentaireDj/commentaireDj.hook'
+import { CommentaireDjService } from './CommentaireDj/commentaireDj.service'
+import { CommentaireDjStore } from './CommentaireDj/commentaireDj.store'
 import { ActivityHook } from './activity/activity.hook'
 import { ActivityService } from './activity/activity.service'
 import { ActivityStore } from './activity/activity.store'
@@ -13,6 +16,9 @@ import { ClubStore } from './club/club.store'
 import { CommentaireClubHook } from './commentaireClub/commentaireClub.hook'
 import { CommentaireClubService } from './commentaireClub/commentaireClub.service'
 import { CommentaireClubStore } from './commentaireClub/commentaireClub.store'
+import { CommentaireHostHook } from './commentaireHost/commentaireHost.hook'
+import { CommentaireHostService } from './commentaireHost/commentaireHost.service'
+import { CommentaireHostStore } from './commentaireHost/commentaireHost.store'
 import { DancerHook } from './dancer/dancer.hook'
 import { DancerService } from './dancer/dancer.service'
 import { DancerStore } from './dancer/dancer.store'
@@ -107,6 +113,16 @@ export const Store = {
         ...CommentaireClubStore,
         ...CommentaireClubService,
         ...CommentaireClubHook,
+      },
+      commentaireDj: {
+        ...CommentaireDjStore,
+        ...CommentaireDjService,
+        ...CommentaireDjHook,
+      },
+      commentaireHost: {
+        ...CommentaireHostStore,
+        ...CommentaireHostService,
+        ...CommentaireHostHook,
       },
       land: {
         ...LandStore,

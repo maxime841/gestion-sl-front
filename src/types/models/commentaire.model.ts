@@ -8,11 +8,12 @@ export interface ICommentaire {
  id?: number
  author?: string
  title?: string
- commentaire?: string
+ content?: string
  date_comment?: string
  created_at?: Date
  updated_at?: Date
  picture?: IPicture
+ user_id?: number
  user?: Iuser
 }
 
@@ -35,6 +36,52 @@ export interface ICommentairesClubResponse {
 */
 export interface ISendCommentaireClubResponse {
     title?: string
-    commentaire?: string
-    // author?: string
+    content?: string
+    user?: Iuser
 }
+
+/**
+* type for response one commentaire dj
+*/
+export interface ICommentaireDjResponse {
+    comment: ICommentaire
+   }
+
+   /**
+   * type for response all commentaires dj
+   */
+   export interface ICommentairesDjResponse {
+    commentaires: ICommentaire[]
+   }
+
+   /**
+   * type for response send one commentaire dj
+   */
+   export interface ISendCommentaireDjResponse {
+       title?: string
+       content?: string
+       user?: Iuser
+   }
+
+   /**
+* type for response one commentaire host
+*/
+export interface ICommentaireHostResponse {
+    comment: ICommentaire
+   }
+
+   /**
+   * type for response all commentaires host
+   */
+   export interface ICommentairesHostResponse {
+    commentaires: ICommentaire[]
+   }
+
+   /**
+   * type for response send one commentaire host
+   */
+   export interface ISendCommentaireHostResponse {
+       title?: string
+       content?: string
+       user?: Iuser
+   }

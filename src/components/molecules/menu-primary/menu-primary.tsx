@@ -64,7 +64,7 @@ function MenuPrimary () {
       <li>
         <LinkBtn link='/hobby' addClass='w-10 h-5 mx-1'>
           <LoisirIcon size='w-5 h-5'/>
-          <span className='ml-2'>Loisir</span>
+          <span className='ml-2'>Evenements</span>
         </LinkBtn>
       </li>
       {/* dropdown land */}

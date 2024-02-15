@@ -1,13 +1,13 @@
 import React, { useState } from 'react'
 import '../App.css'
-import fondsl from '../../assets/picture/fondsl.jpg'
+import Aoks_city from '../../assets/picture/Aoks city.png'
 import LinkBtn from '@atoms/links/link-btn'
 
 function AcceuilPage() {
   return (
     <section className='relative'>
       <img
-        src={fondsl}
+        src={Aoks_city}
         alt='logo second life'
         className='width sm:w-[768px] md:w-[992px] lg:w-[3000px]'
       />

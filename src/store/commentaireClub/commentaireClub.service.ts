@@ -28,16 +28,16 @@ export const CommentaireClubService = {
    * post one commentaire club
    *
    */
-   commentaireClub: async (title: string, commentaire: string, id: any) => {
+   commentaireClub: async (title: string, content: string, id:any) => {
     try {
       const res = await http.post<ISendCommentaireClubResponse>(
         `${Eroute.SEND_COMMENTAIRE_CLUB}`, {
           title,
-         commentaire,
+         content,
          id
         })
-        if (res.data.commentaire) {
-          return commentaire
+        if (res.data.content) {
+          return [title, content, id]
         }
       } catch (error) {
           AppService.errorMessage(userStore.loginError$, error, Eerror.LOGIN)

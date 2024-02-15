@@ -16,8 +16,7 @@ function HomePage() {
   return (
     <section className="fond-palmier bg-cover">
      <h1 className="font-title text-center py-8  text-white text-8xl uppercase font-extrabold">Home</h1>
-     <p className="text-white text-center py-8">Ce site web est dédié à un jeux Second life, entre plusieurs personnes de communautés françaises, nous avons décidé
-      de centraliser nos club, shopping et loisir pour vous montrer nos prestatations que l'on peux vous proposer. Voici leur logo </p>
+     <p className="text-white text-center py-8">Ce site web est dédié à un jeux Second life, comme présenter en page d'acceuil ceux sont 6 créatrices françaises , elles sont ambitieuses motivées elles vous propose plusieurs service tels que leur shop, des evenements, des clubs. Pour encore mieu les découvrir voici leur logo </p>
       <article className="flex p-8 ">
         <h2 className="border-2 bg-blue-200 h-16 w-28 rounded-lg py-2 px-4">Nos clubs</h2>
         <img src={LogoPina} alt="Representation du pina colada" className='mx-8 w-72 h-72' />
@@ -35,7 +34,7 @@ function HomePage() {
         <img src={MPRanchEstate} alt="Representation du MP Ranch Estate" className='mx-10 w-80 h-80' />
       </article>
       <article className="flex p-8 bg-fond_clair">
-        <h2 className="border-2 bg-blue-200 h-16 w-28 rounded-lg py-4 px-4">Nos loisirs</h2>
+        <h2 className="border-2 bg-blue-200 h-16 w-28 rounded-lg py-2 px-4">Nos evenements</h2>
         <img src={hotelPatronna} alt="Representation de l'hotel patronna" className='mx-10 w-96 h-96' />
         <img src={DreamGuadeloupe} alt="Representation de dream guadeloupe" className='mx-10 w-96 h-96' />
       </article>

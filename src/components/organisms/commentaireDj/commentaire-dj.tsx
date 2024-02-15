@@ -1,21 +1,21 @@
 import Title from '@atoms/title/title'
-import { FormCommentaireClub } from '@molecules/forms/formCommentaireClub'
+import { FormCommentaireDj } from '@molecules/forms/formCommentaireDj'
 import userCommun from '../../../assets/picture/user.png'
 import React from 'react'
-import { TPageProfilClub } from '@types-app/models/club.model'
+import { TPageProfilDj } from '@types-app/models/dj.model'
 import { Store } from '@store/store'
 import { useParams } from 'react-router-dom'
 
-export function CommentaireClub({ clubCurrent }: TPageProfilClub) {
-  const { clubId } = useParams()
+export function CommentaireDj({ djCurrent }: TPageProfilDj) {
+  const { djId } = useParams()
 
-  const club = Store.club.useClub(clubId!)
+  const dj = Store.dj.useDj(djId!)
 
   return (
     <section>
-    <Title addClass='font-title text-center text-white text-4xl uppercase mt-12 font-extrabold mb-5 underline'>Commentaire du club</Title>
+    <Title addClass='font-title text-center text-white text-4xl uppercase mt-12 font-extrabold mb-5 underline'>Commentaire du dj</Title>
     <article className='border-4 mx-10 rounded-[36px]'>
-      {clubCurrent?.commentaires?.map(comment => {
+      {djCurrent?.commentaires?.map(comment => {
         return (
           <article key={comment.id} className='text-white w-fit border-2 p-6 rounded-[36px] m-5'>
             <h3 className='ml-5 font-semibold mb-5'>Titre: {comment.title}</h3>
@@ -32,9 +32,9 @@ export function CommentaireClub({ clubCurrent }: TPageProfilClub) {
           </article>
         )
       })}
-      <p className='text-white text-center mt-10'>Venez rajoutez votre propre commentaire pour que le propriétaire du club lise vos critiques constructives ou vos bonne impressions, cela lui fera plaisir et ainsi voir si des améliorations possibles seront à faire
+      <p className='text-white text-center mt-10'>Venez rajoutez votre propre commentaire pour que le dj lise vos critiques constructives ou vos bonne impressions, cela lui fera plaisir et ainsi voir si des améliorations possibles seront à faire
       </p>
-      <FormCommentaireClub clubCurrent={club}/>
+      <FormCommentaireDj djCurrent={dj}/>
     </article>
     </section>
   )
